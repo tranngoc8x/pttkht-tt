@@ -15,8 +15,6 @@ namespace QLD
        // private SqlDataAdapter da = new SqlDataAdapter();
        // private DataTable dt = new DataTable();
         SqlConnection conn = new SqlConnection(Connection.Connec);
-        private int kt = 0;
-        private int kt1 = 0;
         private DataTable dths = new DataTable("tblhocsinh");
         private SqlDataAdapter da = new SqlDataAdapter();
         public mainForm()
@@ -27,7 +25,7 @@ namespace QLD
         {
             mainmenu.Visible = false;
             panellogin.Visible = true;
-            pa_dshs.Visible = false;
+            //pa_dshs.Visible = false;
             status.Text = "Xin chào khách. Hãy đăng nhập để bắt đầu làm việc !"; 
         }
 
@@ -75,7 +73,7 @@ namespace QLD
         {
             mainmenu.Visible = false;
             panellogin.Visible = true;
-            pa_dshs.Visible = false;
+          //  pa_dshs.Visible = false;
             user.Text = "";
             pass.Text = "";
             status.Text = "Xin chào khách. Hãy đăng nhập để bắt đầu làm việc !";
@@ -83,26 +81,34 @@ namespace QLD
 
         private void danhsachhs_Click(object sender, EventArgs e)
         {
-            pa_dshs.RefreshItems();
-            pa_dshs.Visible = true;
-            pa_dshs.RecalcLayout();
+            //pa_dshs.Refresh();
+            //pa_dshs.RefreshItems();
+            //pa_dshs.Visible = true;
             
             conn.Open();
             SqlCommand cmd = new SqlCommand(@"Select 
-                ROW_NUMBER() OVER (ORDER BY MaHS) AS STT,
-                MaHS as 'Mã học sinh',
-                Hoten as 'Họ tên',
-                Ngaysinh as 'Ngày sinh',
-                Gioitinh as 'Giới tính',
-                lop.TenLop as Lớp,
-                Tongiao as 'Tôn giáo'
-            from tblhocsinh
-            INNER JOIN lop ON tblhocsinh.MaLop = lop.MaLop
+                ROW_NUMBER() OVER (ORDER BY mahs) AS STT,
+                mahs as 'Mã học sinh',
+                hoten as 'Họ tên',
+                ngaysinh as 'Ngày sinh',
+                gioitinh as 'Giới tính',
+                lop.tenlop as Lớp,
+                tongiao as 'Tôn giáo'
+            from hocsinh
+            INNER JOIN lop ON hocsinh.malop = lop.malop
             ", conn);
             da.SelectCommand = cmd;
             da.Fill(dths);
-            data_dshs.DataSource = dths;
+            //data_dshs.DataSource = dths;
             conn.Close();
+        }
+
+        private void exitapp_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn thoát chương trình không ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

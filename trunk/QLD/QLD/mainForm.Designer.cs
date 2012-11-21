@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mainmenu = new System.Windows.Forms.MenuStrip();
             this.control = new System.Windows.Forms.ToolStripMenuItem();
             this.ngườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,16 +65,10 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.pa_dshs = new DevComponents.DotNetBar.ItemPanel();
-            this.sl_lop = new DevComponents.DotNetBar.Controls.TextBoxDropDown();
-            this.sl_namhoc = new DevComponents.DotNetBar.Controls.ComboTree();
-            this.data_dshs = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.viewhs = new DevComponents.DotNetBar.ButtonX();
+            this.exitapp = new DevComponents.DotNetBar.ButtonX();
             this.mainmenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panellogin.SuspendLayout();
-            this.pa_dshs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_dshs)).BeginInit();
             this.SuspendLayout();
             // 
             // mainmenu
@@ -306,6 +299,7 @@
             this.panellogin.BackgroundStyle.Class = "ItemPanel";
             this.panellogin.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.panellogin.ContainerControlProcessDialogKey = true;
+            this.panellogin.Controls.Add(this.exitapp);
             this.panellogin.Controls.Add(this.labelX4);
             this.panellogin.Controls.Add(this.pass);
             this.panellogin.Controls.Add(this.user);
@@ -363,7 +357,7 @@
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Location = new System.Drawing.Point(232, 182);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(107, 34);
+            this.buttonX1.Size = new System.Drawing.Size(86, 34);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.buttonX1.TabIndex = 5;
             this.buttonX1.Text = "Đăng nhập";
@@ -412,89 +406,17 @@
             this.labelX1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // pa_dshs
+            // exitapp
             // 
-            // 
-            // 
-            // 
-            this.pa_dshs.BackgroundStyle.Class = "ItemPanel";
-            this.pa_dshs.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.pa_dshs.ContainerControlProcessDialogKey = true;
-            this.pa_dshs.Controls.Add(this.viewhs);
-            this.pa_dshs.Controls.Add(this.sl_lop);
-            this.pa_dshs.Controls.Add(this.sl_namhoc);
-            this.pa_dshs.Controls.Add(this.data_dshs);
-            this.pa_dshs.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.pa_dshs.Location = new System.Drawing.Point(0, 24);
-            this.pa_dshs.Name = "pa_dshs";
-            this.pa_dshs.Size = new System.Drawing.Size(728, 457);
-            this.pa_dshs.TabIndex = 4;
-            this.pa_dshs.Text = "itemPanel1";
-            // 
-            // sl_lop
-            // 
-            this.sl_lop.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.sl_lop.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            // 
-            // 
-            // 
-            this.sl_lop.BackgroundStyle.Class = "TextBoxBorder";
-            this.sl_lop.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.sl_lop.ButtonDropDown.Visible = true;
-            this.sl_lop.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.sl_lop.Location = new System.Drawing.Point(363, 29);
-            this.sl_lop.Name = "sl_lop";
-            this.sl_lop.Size = new System.Drawing.Size(136, 19);
-            this.sl_lop.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.sl_lop.TabIndex = 2;
-            this.sl_lop.Text = "";
-            this.sl_lop.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.sl_lop.WatermarkText = "Chọn lớp học";
-            // 
-            // sl_namhoc
-            // 
-            this.sl_namhoc.BackColor = System.Drawing.SystemColors.Window;
-            // 
-            // 
-            // 
-            this.sl_namhoc.BackgroundStyle.Class = "TextBoxBorder";
-            this.sl_namhoc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.sl_namhoc.ButtonDropDown.Visible = true;
-            this.sl_namhoc.Location = new System.Drawing.Point(183, 29);
-            this.sl_namhoc.Name = "sl_namhoc";
-            this.sl_namhoc.Size = new System.Drawing.Size(145, 19);
-            this.sl_namhoc.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.sl_namhoc.TabIndex = 1;
-            this.sl_namhoc.WatermarkText = "Chọn năm học";
-            // 
-            // data_dshs
-            // 
-            this.data_dshs.BackgroundColor = System.Drawing.SystemColors.Info;
-            this.data_dshs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_dshs.DefaultCellStyle = dataGridViewCellStyle1;
-            this.data_dshs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.data_dshs.Location = new System.Drawing.Point(4, 96);
-            this.data_dshs.Name = "data_dshs";
-            this.data_dshs.Size = new System.Drawing.Size(716, 357);
-            this.data_dshs.TabIndex = 0;
-            // 
-            // viewhs
-            // 
-            this.viewhs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.viewhs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.viewhs.Location = new System.Drawing.Point(286, 62);
-            this.viewhs.Name = "viewhs";
-            this.viewhs.Size = new System.Drawing.Size(110, 23);
-            this.viewhs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.viewhs.TabIndex = 3;
-            this.viewhs.Text = "Xem học sinh";
+            this.exitapp.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.exitapp.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.exitapp.Location = new System.Drawing.Point(324, 182);
+            this.exitapp.Name = "exitapp";
+            this.exitapp.Size = new System.Drawing.Size(75, 34);
+            this.exitapp.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.exitapp.TabIndex = 9;
+            this.exitapp.Text = "Thoát";
+            this.exitapp.Click += new System.EventHandler(this.exitapp_Click);
             // 
             // mainForm
             // 
@@ -502,7 +424,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QLD.Properties.Resources.THEME_109_HD_Background21;
             this.ClientSize = new System.Drawing.Size(720, 502);
-            this.Controls.Add(this.pa_dshs);
             this.Controls.Add(this.panellogin);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.mainmenu);
@@ -516,8 +437,6 @@
             this.statusStrip1.PerformLayout();
             this.panellogin.ResumeLayout(false);
             this.panellogin.PerformLayout();
-            this.pa_dshs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_dshs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,11 +481,7 @@
         private System.Windows.Forms.TextBox user;
         private DevComponents.DotNetBar.LabelX labelX4;
         private System.Windows.Forms.ToolStripMenuItem logout;
-        private DevComponents.DotNetBar.ItemPanel pa_dshs;
-        private DevComponents.DotNetBar.Controls.DataGridViewX data_dshs;
-        private DevComponents.DotNetBar.Controls.ComboTree sl_namhoc;
-        private DevComponents.DotNetBar.Controls.TextBoxDropDown sl_lop;
-        private DevComponents.DotNetBar.ButtonX viewhs;
+        private DevComponents.DotNetBar.ButtonX exitapp;
     }
 }
 
