@@ -1,4 +1,4 @@
-namespace QLD
+﻿namespace QLD
 {
     partial class dshs
     {
@@ -28,202 +28,156 @@ namespace QLD
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.metroShell1 = new DevComponents.DotNetBar.Metro.MetroShell();
-            this.metroTabPanel1 = new DevComponents.DotNetBar.Metro.MetroTabPanel();
-            this.metroTabPanel2 = new DevComponents.DotNetBar.Metro.MetroTabPanel();
-            this.metroAppButton1 = new DevComponents.DotNetBar.Metro.MetroAppButton();
-            this.metroTabItem1 = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.metroTabItem2 = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
-            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.metroStatusBar1 = new DevComponents.DotNetBar.Metro.MetroStatusBar();
-            this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
-            this.metroShell1.SuspendLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.griddshs = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.textBoxDropDown1 = new DevComponents.DotNetBar.Controls.TextBoxDropDown();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.btnxem = new DevComponents.DotNetBar.ButtonX();
+            this.btnsuahs = new DevComponents.DotNetBar.ButtonX();
+            this.btnxoahs = new DevComponents.DotNetBar.ButtonX();
+            this.closehs = new DevComponents.DotNetBar.ButtonX();
+            this.btnthemhs = new DevComponents.DotNetBar.ButtonX();
+            ((System.ComponentModel.ISupportInitialize)(this.griddshs)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroShell1
+            // griddshs
             // 
-            this.metroShell1.BackColor = System.Drawing.Color.White;
+            this.griddshs.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.griddshs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.griddshs.DefaultCellStyle = dataGridViewCellStyle1;
+            this.griddshs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.griddshs.Location = new System.Drawing.Point(12, 76);
+            this.griddshs.Name = "griddshs";
+            this.griddshs.Size = new System.Drawing.Size(608, 260);
+            this.griddshs.TabIndex = 0;
             // 
+            // textBoxDropDown1
             // 
-            // 
-            this.metroShell1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroShell1.CaptionVisible = true;
-            this.metroShell1.Controls.Add(this.metroTabPanel1);
-            this.metroShell1.Controls.Add(this.metroTabPanel2);
-            this.metroShell1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroShell1.ForeColor = System.Drawing.Color.Black;
-            this.metroShell1.HelpButtonText = null;
-            this.metroShell1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.metroAppButton1,
-            this.metroTabItem1,
-            this.metroTabItem2});
-            this.metroShell1.KeyTipsFont = new System.Drawing.Font("Tahoma", 7F);
-            this.metroShell1.Location = new System.Drawing.Point(0, 1);
-            this.metroShell1.Name = "metroShell1";
-            this.metroShell1.QuickToolbarItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem1,
-            this.qatCustomizeItem1});
-            this.metroShell1.Size = new System.Drawing.Size(624, 218);
-            this.metroShell1.SystemText.MaximizeRibbonText = "&Maximize the Ribbon";
-            this.metroShell1.SystemText.MinimizeRibbonText = "Mi&nimize the Ribbon";
-            this.metroShell1.SystemText.QatAddItemText = "&Add to Quick Access Toolbar";
-            this.metroShell1.SystemText.QatCustomizeMenuLabel = "<b>Customize Quick Access Toolbar</b>";
-            this.metroShell1.SystemText.QatCustomizeText = "&Customize Quick Access Toolbar...";
-            this.metroShell1.SystemText.QatDialogAddButton = "&Add >>";
-            this.metroShell1.SystemText.QatDialogCancelButton = "Cancel";
-            this.metroShell1.SystemText.QatDialogCaption = "Customize Quick Access Toolbar";
-            this.metroShell1.SystemText.QatDialogCategoriesLabel = "&Choose commands from:";
-            this.metroShell1.SystemText.QatDialogOkButton = "OK";
-            this.metroShell1.SystemText.QatDialogPlacementCheckbox = "&Place Quick Access Toolbar below the Ribbon";
-            this.metroShell1.SystemText.QatDialogRemoveButton = "&Remove";
-            this.metroShell1.SystemText.QatPlaceAboveRibbonText = "&Place Quick Access Toolbar above the Ribbon";
-            this.metroShell1.SystemText.QatPlaceBelowRibbonText = "&Place Quick Access Toolbar below the Ribbon";
-            this.metroShell1.SystemText.QatRemoveItemText = "&Remove from Quick Access Toolbar";
-            this.metroShell1.TabIndex = 0;
-            this.metroShell1.TabStripFont = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroShell1.Text = "metroShell1";
-            // 
-            // metroTabPanel1
-            // 
-            this.metroTabPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.metroTabPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel1.Location = new System.Drawing.Point(0, 51);
-            this.metroTabPanel1.Name = "metroTabPanel1";
-            this.metroTabPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel1.Size = new System.Drawing.Size(624, 167);
+            this.textBoxDropDown1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxDropDown1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             // 
             // 
             // 
-            this.metroTabPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxDropDown1.BackgroundStyle.Class = "TextBoxBorder";
+            this.textBoxDropDown1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxDropDown1.ButtonDropDown.Visible = true;
+            this.textBoxDropDown1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.textBoxDropDown1.Location = new System.Drawing.Point(82, 30);
+            this.textBoxDropDown1.Name = "textBoxDropDown1";
+            this.textBoxDropDown1.Size = new System.Drawing.Size(104, 24);
+            this.textBoxDropDown1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.textBoxDropDown1.TabIndex = 1;
+            this.textBoxDropDown1.Text = "";
+            this.textBoxDropDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textBoxDropDown1.WatermarkText = "Danh sách lớp học";
+            // 
+            // labelX1
             // 
             // 
             // 
-            this.metroTabPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(17, 32);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(51, 19);
+            this.labelX1.TabIndex = 2;
+            this.labelX1.Text = "Chọn lớp";
             // 
+            // btnxem
             // 
-            this.metroTabPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTabPanel1.TabIndex = 1;
+            this.btnxem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnxem.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnxem.Location = new System.Drawing.Point(193, 30);
+            this.btnxem.Name = "btnxem";
+            this.btnxem.Size = new System.Drawing.Size(75, 23);
+            this.btnxem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnxem.TabIndex = 3;
+            this.btnxem.Text = "Xem";
             // 
-            // metroTabPanel2
+            // btnsuahs
             // 
-            this.metroTabPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.metroTabPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel2.Location = new System.Drawing.Point(0, 0);
-            this.metroTabPanel2.Name = "metroTabPanel2";
-            this.metroTabPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel2.Size = new System.Drawing.Size(200, 100);
+            this.btnsuahs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnsuahs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnsuahs.Location = new System.Drawing.Point(210, 357);
+            this.btnsuahs.Name = "btnsuahs";
+            this.btnsuahs.Size = new System.Drawing.Size(75, 23);
+            this.btnsuahs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnsuahs.TabIndex = 4;
+            this.btnsuahs.Text = "Sửa thông tin";
             // 
+            // btnxoahs
             // 
+            this.btnxoahs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnxoahs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnxoahs.Location = new System.Drawing.Point(321, 357);
+            this.btnxoahs.Name = "btnxoahs";
+            this.btnxoahs.Size = new System.Drawing.Size(75, 23);
+            this.btnxoahs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnxoahs.TabIndex = 5;
+            this.btnxoahs.Text = "Xóa học sinh";
             // 
-            this.metroTabPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // closehs
             // 
+            this.closehs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.closehs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.closehs.Location = new System.Drawing.Point(437, 356);
+            this.closehs.Name = "closehs";
+            this.closehs.Size = new System.Drawing.Size(75, 23);
+            this.closehs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.closehs.TabIndex = 6;
+            this.closehs.Text = "Đóng";
+            this.closehs.Click += new System.EventHandler(this.closehs_Click);
             // 
+            // btnthemhs
             // 
-            this.metroTabPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTabPanel2.TabIndex = 2;
-            // 
-            // metroAppButton1
-            // 
-            this.metroAppButton1.AutoExpandOnClick = true;
-            this.metroAppButton1.CanCustomize = false;
-            this.metroAppButton1.ImageFixedSize = new System.Drawing.Size(16, 16);
-            this.metroAppButton1.ImagePaddingHorizontal = 0;
-            this.metroAppButton1.ImagePaddingVertical = 0;
-            this.metroAppButton1.Name = "metroAppButton1";
-            this.metroAppButton1.ShowSubItems = false;
-            this.metroAppButton1.Text = "&File";
-            // 
-            // metroTabItem1
-            // 
-            this.metroTabItem1.Checked = true;
-            this.metroTabItem1.Name = "metroTabItem1";
-            this.metroTabItem1.Panel = this.metroTabPanel1;
-            this.metroTabItem1.Text = "&HOME";
-            // 
-            // metroTabItem2
-            // 
-            this.metroTabItem2.Name = "metroTabItem2";
-            this.metroTabItem2.Panel = this.metroTabPanel2;
-            this.metroTabItem2.Text = "&VIEW";
-            // 
-            // buttonItem1
-            // 
-            this.buttonItem1.Name = "buttonItem1";
-            this.buttonItem1.Text = "buttonItem1";
-            // 
-            // qatCustomizeItem1
-            // 
-            this.qatCustomizeItem1.BeginGroup = true;
-            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
-            // 
-            // styleManager1
-            // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(163)))), ((int)(((byte)(26))))));
-            // 
-            // metroStatusBar1
-            // 
-            this.metroStatusBar1.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.metroStatusBar1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroStatusBar1.ContainerControlProcessDialogKey = true;
-            this.metroStatusBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.metroStatusBar1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroStatusBar1.ForeColor = System.Drawing.Color.Black;
-            this.metroStatusBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.labelItem1});
-            this.metroStatusBar1.Location = new System.Drawing.Point(0, 374);
-            this.metroStatusBar1.Name = "metroStatusBar1";
-            this.metroStatusBar1.Size = new System.Drawing.Size(624, 21);
-            this.metroStatusBar1.TabIndex = 1;
-            this.metroStatusBar1.Text = "metroStatusBar1";
-            // 
-            // labelItem1
-            // 
-            this.labelItem1.Name = "labelItem1";
-            this.labelItem1.Text = "READY";
+            this.btnthemhs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnthemhs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnthemhs.Location = new System.Drawing.Point(82, 357);
+            this.btnthemhs.Name = "btnthemhs";
+            this.btnthemhs.Size = new System.Drawing.Size(85, 23);
+            this.btnthemhs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnthemhs.TabIndex = 7;
+            this.btnthemhs.Text = "Thêm học sinh";
+            this.btnthemhs.Click += new System.EventHandler(this.btnthemhs_Click);
             // 
             // dshs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 396);
-            this.Controls.Add(this.metroStatusBar1);
-            this.Controls.Add(this.metroShell1);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(632, 400);
+            this.Controls.Add(this.btnthemhs);
+            this.Controls.Add(this.closehs);
+            this.Controls.Add(this.btnxoahs);
+            this.Controls.Add(this.btnsuahs);
+            this.Controls.Add(this.btnxem);
+            this.Controls.Add(this.labelX1);
+            this.Controls.Add(this.textBoxDropDown1);
+            this.Controls.Add(this.griddshs);
             this.Name = "dshs";
-            this.Text = "DotNetBar Metro App Form";
+            this.Text = "Danh sách học sinh";
             this.Load += new System.EventHandler(this.dshs_Load);
-            this.metroShell1.ResumeLayout(false);
-            this.metroShell1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.griddshs)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevComponents.DotNetBar.Metro.MetroShell metroShell1;
-        private DevComponents.DotNetBar.Metro.MetroTabPanel metroTabPanel1;
-        private DevComponents.DotNetBar.Metro.MetroTabPanel metroTabPanel2;
-        private DevComponents.DotNetBar.Metro.MetroAppButton metroAppButton1;
-        private DevComponents.DotNetBar.Metro.MetroTabItem metroTabItem1;
-        private DevComponents.DotNetBar.Metro.MetroTabItem metroTabItem2;
-        private DevComponents.DotNetBar.ButtonItem buttonItem1;
-        private DevComponents.DotNetBar.QatCustomizeItem qatCustomizeItem1;
-        private DevComponents.DotNetBar.StyleManager styleManager1;
-        private DevComponents.DotNetBar.Metro.MetroStatusBar metroStatusBar1;
-        private DevComponents.DotNetBar.LabelItem labelItem1;
-
+        private DevComponents.DotNetBar.Controls.DataGridViewX griddshs;
+        private DevComponents.DotNetBar.Controls.TextBoxDropDown textBoxDropDown1;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.ButtonX btnxem;
+        private DevComponents.DotNetBar.ButtonX btnsuahs;
+        private DevComponents.DotNetBar.ButtonX btnxoahs;
+        private DevComponents.DotNetBar.ButtonX closehs;
+        private DevComponents.DotNetBar.ButtonX btnthemhs;
     }
 }
-

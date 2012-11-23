@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 namespace QLD
 {
 
@@ -15,8 +17,7 @@ namespace QLD
        // private SqlDataAdapter da = new SqlDataAdapter();
        // private DataTable dt = new DataTable();
         SqlConnection conn = new SqlConnection(Connection.Connec);
-        private DataTable dths = new DataTable("tblhocsinh");
-        private SqlDataAdapter da = new SqlDataAdapter();
+       
         public mainForm()
         {
             InitializeComponent();
@@ -81,26 +82,8 @@ namespace QLD
 
         private void danhsachhs_Click(object sender, EventArgs e)
         {
-            //pa_dshs.Refresh();
-            //pa_dshs.RefreshItems();
-            //pa_dshs.Visible = true;
-            
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(@"Select 
-                ROW_NUMBER() OVER (ORDER BY mahs) AS STT,
-                mahs as 'Mã học sinh',
-                hoten as 'Họ tên',
-                ngaysinh as 'Ngày sinh',
-                gioitinh as 'Giới tính',
-                lop.tenlop as Lớp,
-                tongiao as 'Tôn giáo'
-            from hocsinh
-            INNER JOIN lop ON hocsinh.malop = lop.malop
-            ", conn);
-            da.SelectCommand = cmd;
-            da.Fill(dths);
-            //data_dshs.DataSource = dths;
-            conn.Close();
+            dshs ds = new dshs();
+            ds.Show();
         }
 
         private void exitapp_Click(object sender, EventArgs e)
@@ -109,6 +92,31 @@ namespace QLD
             {
                 Application.Exit();
             }
+        }
+
+        private void themhs_Click(object sender, EventArgs e)
+        {
+            themhs themhs = new themhs();
+            themhs.Show();
+        }
+
+        private void nhapdiem_Click(object sender, EventArgs e)
+        {
+            fthemdiem nhapdiem = new fthemdiem();
+            nhapdiem.Show();
+        }
+
+        private void fbangdiemhs_Click(object sender, EventArgs e)
+        {
+            rpdiem rp = new rpdiem();
+            rp.Show();
+            
+        }
+
+        private void fdshs_Click(object sender, EventArgs e)
+        {
+            frp nhapdiem = new frp();
+            nhapdiem.Show();
         }
     }
 }
