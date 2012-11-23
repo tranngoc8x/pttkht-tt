@@ -7,3 +7,10 @@ F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\b
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.exe
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.pdb
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.dshs.resources
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.themhs.resources
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.fthemdiem.resources
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\bin\Debug\QLD.exe.config
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.frp.resources
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\RdlCompile.cache
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\RdlCompile.compiled
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.rpdiem.resources

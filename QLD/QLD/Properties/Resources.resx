@@ -121,6 +121,9 @@
   <data name="Lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="THEME_109_HD_Background21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\THEME_109_HD_Background21.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="THEME_109_HD_Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\THEME_109_HD_Background2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,7 +133,7 @@
   <data name="387227_324702320887792_96944966_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\387227_324702320887792_96944966_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="THEME_109_HD_Background21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\THEME_109_HD_Background21.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hoavantrongdongvl5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoavantrongdongvl5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

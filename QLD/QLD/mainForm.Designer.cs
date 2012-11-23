@@ -46,9 +46,7 @@
             this.quảnLýLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhsachlop = new System.Windows.Forms.ToolStripMenuItem();
             this.themlop = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýQuyChếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhsachquyhe = new System.Windows.Forms.ToolStripMenuItem();
-            this.themquyche = new System.Windows.Forms.ToolStripMenuItem();
+            this.mndsmonhoc = new System.Windows.Forms.ToolStripMenuItem();
             this.mndiem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhapdiem = new System.Windows.Forms.ToolStripMenuItem();
             this.xemdiem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,6 +56,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.status = new System.Windows.Forms.ToolStripStatusLabel();
             this.panellogin = new DevComponents.DotNetBar.ItemPanel();
+            this.exitapp = new DevComponents.DotNetBar.ButtonX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.pass = new System.Windows.Forms.TextBox();
             this.user = new System.Windows.Forms.TextBox();
@@ -65,7 +64,6 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.exitapp = new DevComponents.DotNetBar.ButtonX();
             this.mainmenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panellogin.SuspendLayout();
@@ -151,6 +149,7 @@
             this.themhs.Name = "themhs";
             this.themhs.Size = new System.Drawing.Size(166, 22);
             this.themhs.Text = "Thêm học sinh";
+            this.themhs.Click += new System.EventHandler(this.themhs_Click);
             // 
             // danhsachhs
             // 
@@ -164,7 +163,7 @@
             this.mndaotao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýNămHọcToolStripMenuItem,
             this.quảnLýLớpToolStripMenuItem,
-            this.quảnLýQuyChếToolStripMenuItem});
+            this.mndsmonhoc});
             this.mndaotao.Name = "mndaotao";
             this.mndaotao.Size = new System.Drawing.Size(96, 20);
             this.mndaotao.Text = "Quản lý đào tạo";
@@ -175,7 +174,7 @@
             this.themnh,
             this.danhsachnh});
             this.quảnLýNămHọcToolStripMenuItem.Name = "quảnLýNămHọcToolStripMenuItem";
-            this.quảnLýNămHọcToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.quảnLýNămHọcToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.quảnLýNămHọcToolStripMenuItem.Text = "Quản lý năm học";
             // 
             // themnh
@@ -196,7 +195,7 @@
             this.danhsachlop,
             this.themlop});
             this.quảnLýLớpToolStripMenuItem.Name = "quảnLýLớpToolStripMenuItem";
-            this.quảnLýLớpToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.quảnLýLớpToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.quảnLýLớpToolStripMenuItem.Text = "Quản lý lớp";
             // 
             // danhsachlop
@@ -211,26 +210,11 @@
             this.themlop.Size = new System.Drawing.Size(141, 22);
             this.themlop.Text = "Thêm mới lớp";
             // 
-            // quảnLýQuyChếToolStripMenuItem
+            // mndsmonhoc
             // 
-            this.quảnLýQuyChếToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.danhsachquyhe,
-            this.themquyche});
-            this.quảnLýQuyChếToolStripMenuItem.Name = "quảnLýQuyChếToolStripMenuItem";
-            this.quảnLýQuyChếToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.quảnLýQuyChếToolStripMenuItem.Text = "Quản lý quy chế";
-            // 
-            // danhsachquyhe
-            // 
-            this.danhsachquyhe.Name = "danhsachquyhe";
-            this.danhsachquyhe.Size = new System.Drawing.Size(165, 22);
-            this.danhsachquyhe.Text = "Danh sách quy chế";
-            // 
-            // themquyche
-            // 
-            this.themquyche.Name = "themquyche";
-            this.themquyche.Size = new System.Drawing.Size(165, 22);
-            this.themquyche.Text = "Thêm mới quy chế";
+            this.mndsmonhoc.Name = "mndsmonhoc";
+            this.mndsmonhoc.Size = new System.Drawing.Size(167, 22);
+            this.mndsmonhoc.Text = "Danh sách môn học";
             // 
             // mndiem
             // 
@@ -246,6 +230,7 @@
             this.nhapdiem.Name = "nhapdiem";
             this.nhapdiem.Size = new System.Drawing.Size(124, 22);
             this.nhapdiem.Text = "Nhập điểm";
+            this.nhapdiem.Click += new System.EventHandler(this.nhapdiem_Click);
             // 
             // xemdiem
             // 
@@ -267,12 +252,14 @@
             this.fdshs.Name = "fdshs";
             this.fdshs.Size = new System.Drawing.Size(208, 22);
             this.fdshs.Text = "Danh sách học sinh theo lớp";
+            this.fdshs.Click += new System.EventHandler(this.fdshs_Click);
             // 
             // fbangdiemhs
             // 
             this.fbangdiemhs.Name = "fbangdiemhs";
             this.fbangdiemhs.Size = new System.Drawing.Size(208, 22);
             this.fbangdiemhs.Text = "Bảng điểm tổng kết học sinh";
+            this.fbangdiemhs.Click += new System.EventHandler(this.fbangdiemhs_Click);
             // 
             // statusStrip1
             // 
@@ -314,6 +301,18 @@
             this.panellogin.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
             this.panellogin.TabIndex = 3;
             this.panellogin.Text = "itemPanel1";
+            // 
+            // exitapp
+            // 
+            this.exitapp.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.exitapp.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.exitapp.Location = new System.Drawing.Point(324, 182);
+            this.exitapp.Name = "exitapp";
+            this.exitapp.Size = new System.Drawing.Size(75, 34);
+            this.exitapp.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.exitapp.TabIndex = 9;
+            this.exitapp.Text = "Thoát";
+            this.exitapp.Click += new System.EventHandler(this.exitapp_Click);
             // 
             // labelX4
             // 
@@ -406,18 +405,6 @@
             this.labelX1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // exitapp
-            // 
-            this.exitapp.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.exitapp.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.exitapp.Location = new System.Drawing.Point(324, 182);
-            this.exitapp.Name = "exitapp";
-            this.exitapp.Size = new System.Drawing.Size(75, 34);
-            this.exitapp.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.exitapp.TabIndex = 9;
-            this.exitapp.Text = "Thoát";
-            this.exitapp.Click += new System.EventHandler(this.exitapp_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,9 +442,6 @@
         private System.Windows.Forms.ToolStripMenuItem quảnLýLớpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhsachlop;
         private System.Windows.Forms.ToolStripMenuItem themlop;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýQuyChếToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem danhsachquyhe;
-        private System.Windows.Forms.ToolStripMenuItem themquyche;
         private System.Windows.Forms.ToolStripMenuItem mndiem;
         private System.Windows.Forms.ToolStripMenuItem nhapdiem;
         private System.Windows.Forms.ToolStripMenuItem xemdiem;
@@ -482,6 +466,7 @@
         private DevComponents.DotNetBar.LabelX labelX4;
         private System.Windows.Forms.ToolStripMenuItem logout;
         private DevComponents.DotNetBar.ButtonX exitapp;
+        private System.Windows.Forms.ToolStripMenuItem mndsmonhoc;
     }
 }
 
