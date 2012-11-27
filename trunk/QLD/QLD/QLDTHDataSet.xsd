@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLDTHDataSet" targetNamespace="http://tempuri.org/QLDTHDataSet.xsd" xmlns:mstns="http://tempuri.org/QLDTHDataSet.xsd" xmlns="http://tempuri.org/QLDTHDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLDTHConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLDTHConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLD.Properties.Settings.GlobalReference.Default.QLDTHConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="diemTableAdapter" GeneratorDataComponentClassName="diemTableAdapter" Name="diem" UserDataComponentName="diemTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLDTHConnectionString (Settings)" DbObjectName="QLDTH.dbo.diem" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT mahs, mamon, hocky, diem15, diem1tiet, diemthi FROM dbo.diem</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mahs" DataSetColumn="mahs" />
+              <Mapping SourceColumn="mamon" DataSetColumn="mamon" />
+              <Mapping SourceColumn="hocky" DataSetColumn="hocky" />
+              <Mapping SourceColumn="diem15" DataSetColumn="diem15" />
+              <Mapping SourceColumn="diem1tiet" DataSetColumn="diem1tiet" />
+              <Mapping SourceColumn="diemthi" DataSetColumn="diemthi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="hocsinhTableAdapter" GeneratorDataComponentClassName="hocsinhTableAdapter" Name="hocsinh" UserDataComponentName="hocsinhTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLDTHConnectionString (Settings)" DbObjectName="QLDTH.dbo.hocsinh" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT mahs, malop, hanhkiem, hoten FROM dbo.hocsinh</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mahs" DataSetColumn="mahs" />
+              <Mapping SourceColumn="malop" DataSetColumn="malop" />
+              <Mapping SourceColumn="hanhkiem" DataSetColumn="hanhkiem" />
+              <Mapping SourceColumn="hoten" DataSetColumn="hoten" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="lopTableAdapter" GeneratorDataComponentClassName="lopTableAdapter" Name="lop" UserDataComponentName="lopTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLDTHConnectionString (Settings)" DbObjectName="QLDTH.dbo.lop" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tenlop FROM dbo.lop</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tenlop" DataSetColumn="tenlop" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="monhocTableAdapter" GeneratorDataComponentClassName="monhocTableAdapter" Name="monhoc" UserDataComponentName="monhocTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLDTHConnectionString (Settings)" DbObjectName="QLDTH.dbo.monhoc" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tenmon FROM dbo.monhoc</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tenmon" DataSetColumn="tenmon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLDTHDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="QLDTHDataSet" msprop:Generator_UserDSName="QLDTHDataSet" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="diem" msprop:Generator_UserTableName="diem" msprop:Generator_RowDeletedName="diemRowDeleted" msprop:Generator_TableClassName="diemDataTable" msprop:Generator_RowChangedName="diemRowChanged" msprop:Generator_RowClassName="diemRow" msprop:Generator_RowChangingName="diemRowChanging" msprop:Generator_RowEvArgName="diemRowChangeEvent" msprop:Generator_RowEvHandlerName="diemRowChangeEventHandler" msprop:Generator_TablePropName="diem" msprop:Generator_TableVarName="tablediem" msprop:Generator_RowDeletingName="diemRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mahs" msprop:Generator_UserColumnName="mahs" msprop:Generator_ColumnPropNameInRow="mahs" msprop:Generator_ColumnVarNameInTable="columnmahs" msprop:Generator_ColumnPropNameInTable="mahsColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mamon" msprop:Generator_UserColumnName="mamon" msprop:Generator_ColumnPropNameInRow="mamon" msprop:Generator_ColumnVarNameInTable="columnmamon" msprop:Generator_ColumnPropNameInTable="mamonColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hocky" msprop:Generator_UserColumnName="hocky" msprop:Generator_ColumnPropNameInRow="hocky" msprop:Generator_ColumnVarNameInTable="columnhocky" msprop:Generator_ColumnPropNameInTable="hockyColumn" type="xs:int" />
+              <xs:element name="diem15" msprop:Generator_UserColumnName="diem15" msprop:Generator_ColumnPropNameInRow="diem15" msprop:Generator_ColumnVarNameInTable="columndiem15" msprop:Generator_ColumnPropNameInTable="diem15Column" type="xs:double" minOccurs="0" />
+              <xs:element name="diem1tiet" msprop:Generator_UserColumnName="diem1tiet" msprop:Generator_ColumnPropNameInRow="diem1tiet" msprop:Generator_ColumnVarNameInTable="columndiem1tiet" msprop:Generator_ColumnPropNameInTable="diem1tietColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="diemthi" msprop:Generator_UserColumnName="diemthi" msprop:Generator_ColumnPropNameInRow="diemthi" msprop:Generator_ColumnVarNameInTable="columndiemthi" msprop:Generator_ColumnPropNameInTable="diemthiColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hocsinh" msprop:Generator_UserTableName="hocsinh" msprop:Generator_RowDeletedName="hocsinhRowDeleted" msprop:Generator_TableClassName="hocsinhDataTable" msprop:Generator_RowChangedName="hocsinhRowChanged" msprop:Generator_RowClassName="hocsinhRow" msprop:Generator_RowChangingName="hocsinhRowChanging" msprop:Generator_RowEvArgName="hocsinhRowChangeEvent" msprop:Generator_RowEvHandlerName="hocsinhRowChangeEventHandler" msprop:Generator_TablePropName="hocsinh" msprop:Generator_TableVarName="tablehocsinh" msprop:Generator_RowDeletingName="hocsinhRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mahs" msprop:Generator_UserColumnName="mahs" msprop:Generator_ColumnPropNameInRow="mahs" msprop:Generator_ColumnVarNameInTable="columnmahs" msprop:Generator_ColumnPropNameInTable="mahsColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="malop" msprop:Generator_UserColumnName="malop" msprop:Generator_ColumnPropNameInRow="malop" msprop:Generator_ColumnVarNameInTable="columnmalop" msprop:Generator_ColumnPropNameInTable="malopColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hanhkiem" msprop:Generator_UserColumnName="hanhkiem" msprop:Generator_ColumnPropNameInRow="hanhkiem" msprop:Generator_ColumnVarNameInTable="columnhanhkiem" msprop:Generator_ColumnPropNameInTable="hanhkiemColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hoten" msprop:Generator_UserColumnName="hoten" msprop:Generator_ColumnPropNameInRow="hoten" msprop:Generator_ColumnVarNameInTable="columnhoten" msprop:Generator_ColumnPropNameInTable="hotenColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="lop" msprop:Generator_UserTableName="lop" msprop:Generator_RowDeletedName="lopRowDeleted" msprop:Generator_TableClassName="lopDataTable" msprop:Generator_RowChangedName="lopRowChanged" msprop:Generator_RowClassName="lopRow" msprop:Generator_RowChangingName="lopRowChanging" msprop:Generator_RowEvArgName="lopRowChangeEvent" msprop:Generator_RowEvHandlerName="lopRowChangeEventHandler" msprop:Generator_TablePropName="lop" msprop:Generator_TableVarName="tablelop" msprop:Generator_RowDeletingName="lopRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tenlop" msprop:Generator_UserColumnName="tenlop" msprop:Generator_ColumnPropNameInRow="tenlop" msprop:Generator_ColumnVarNameInTable="columntenlop" msprop:Generator_ColumnPropNameInTable="tenlopColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="monhoc" msprop:Generator_UserTableName="monhoc" msprop:Generator_RowDeletedName="monhocRowDeleted" msprop:Generator_TableClassName="monhocDataTable" msprop:Generator_RowChangedName="monhocRowChanged" msprop:Generator_RowClassName="monhocRow" msprop:Generator_RowChangingName="monhocRowChanging" msprop:Generator_RowEvArgName="monhocRowChangeEvent" msprop:Generator_RowEvHandlerName="monhocRowChangeEventHandler" msprop:Generator_TablePropName="monhoc" msprop:Generator_TableVarName="tablemonhoc" msprop:Generator_RowDeletingName="monhocRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tenmon" msprop:Generator_UserColumnName="tenmon" msprop:Generator_ColumnPropNameInRow="tenmon" msprop:Generator_ColumnVarNameInTable="columntenmon" msprop:Generator_ColumnPropNameInTable="tenmonColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:hocsinh" />
+      <xs:field xpath="mstns:mahs" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_diem_hocsinh" msdata:parent="hocsinh" msdata:child="diem" msdata:parentkey="mahs" msdata:childkey="mahs" msprop:Generator_UserRelationName="FK_diem_hocsinh" msprop:Generator_RelationVarName="relationFK_diem_hocsinh" msprop:Generator_UserChildTable="diem" msprop:Generator_UserParentTable="hocsinh" msprop:Generator_ParentPropName="hocsinhRow" msprop:Generator_ChildPropName="GetdiemRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
