@@ -117,8 +117,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="rep_dshs.rdlc" />
+    <EmbeddedResource Include="rep_diem.rdlc" />
     <EmbeddedResource Include="rpdiem.resx">
       <DependentUpon>rpdiem.cs</DependentUpon>
       <SubType>Designer</SubType>

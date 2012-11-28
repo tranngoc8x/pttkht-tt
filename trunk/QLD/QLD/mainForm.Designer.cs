@@ -310,7 +310,8 @@
             this.exitapp.Name = "exitapp";
             this.exitapp.Size = new System.Drawing.Size(75, 34);
             this.exitapp.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.exitapp.TabIndex = 9;
+            this.exitapp.Symbol = "";
+            this.exitapp.TabIndex = 4;
             this.exitapp.Text = "Thoát";
             this.exitapp.Click += new System.EventHandler(this.exitapp_Click);
             // 
@@ -335,7 +336,7 @@
             this.pass.Location = new System.Drawing.Point(232, 142);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(170, 29);
-            this.pass.TabIndex = 7;
+            this.pass.TabIndex = 2;
             this.pass.UseSystemPasswordChar = true;
             // 
             // user
@@ -348,7 +349,7 @@
             this.user.Location = new System.Drawing.Point(232, 97);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(169, 29);
-            this.user.TabIndex = 6;
+            this.user.TabIndex = 1;
             // 
             // buttonX1
             // 
@@ -358,7 +359,8 @@
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(86, 34);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
-            this.buttonX1.TabIndex = 5;
+            this.buttonX1.Symbol = "";
+            this.buttonX1.TabIndex = 3;
             this.buttonX1.Text = "Đăng nhập";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
@@ -373,7 +375,7 @@
             this.labelX3.Location = new System.Drawing.Point(133, 144);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(74, 20);
-            this.labelX3.TabIndex = 4;
+            this.labelX3.TabIndex = 6;
             this.labelX3.Text = "Mật khẩu";
             // 
             // labelX2
@@ -387,7 +389,7 @@
             this.labelX2.Location = new System.Drawing.Point(130, 102);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(96, 20);
-            this.labelX2.TabIndex = 3;
+            this.labelX2.TabIndex = 5;
             this.labelX2.Text = "Tên đăng nhập";
             // 
             // labelX1

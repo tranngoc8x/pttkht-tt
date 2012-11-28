@@ -61,7 +61,7 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  <Width>7in</Width>
+  <Width>7.375in</Width>
   <Body>
     <ReportItems>
       <Textbox Name="textbox10">
@@ -76,7 +76,7 @@
         </Style>
         <ZIndex>4</ZIndex>
         <CanGrow>true</CanGrow>
-        <Left>5.375in</Left>
+        <Left>5.75in</Left>
         <Height>0.25in</Height>
         <Value>Người lập</Value>
       </Textbox>
@@ -93,7 +93,7 @@
         </Style>
         <ZIndex>3</ZIndex>
         <CanGrow>true</CanGrow>
-        <Left>3in</Left>
+        <Left>3.375in</Left>
         <Height>0.25in</Height>
         <Value>Danh sách học sinh</Value>
       </Textbox>
@@ -110,7 +110,7 @@
         </Style>
         <ZIndex>2</ZIndex>
         <CanGrow>true</CanGrow>
-        <Left>4.375in</Left>
+        <Left>4.75in</Left>
         <Height>0.375in</Height>
         <Value>Cộng hòa xã hội chủ nghĩa Việt Nam
 Độc lập - Tự do - Hạnh phúc</Value>
@@ -137,7 +137,6 @@ Lớp 11A4
       <Table Name="table1">
         <DataSetName>data_dshs_viewdshs</DataSetName>
         <Top>1.375in</Top>
-        <Width>6.375in</Width>
         <Details>
           <TableRows>
             <TableRow>
@@ -224,6 +223,7 @@ Lớp 11A4
                           <Default>Solid</Default>
                         </BorderStyle>
                         <FontFamily>Tahoma</FontFamily>
+                        <Format>dd/MM/yyyy</Format>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -470,10 +470,10 @@ Lớp 11A4
             <Width>1in</Width>
           </TableColumn>
           <TableColumn>
-            <Width>1in</Width>
+            <Width>1.25in</Width>
           </TableColumn>
           <TableColumn>
-            <Width>1.375in</Width>
+            <Width>1.625in</Width>
           </TableColumn>
           <TableColumn>
             <Width>1in</Width>

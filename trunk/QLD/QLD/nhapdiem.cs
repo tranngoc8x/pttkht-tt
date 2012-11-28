@@ -35,7 +35,7 @@ namespace QLD
                 diem15 as 'Điểm 15 phút',
                 diem1tiet as 'Điểm 1 tiết',
                 diemthi as 'Điểm thi',
-                (diemthi+diem1tiet*2+diem15)/4 as 'Điểm tổng kết'
+                round((diemthi+diem1tiet*2+diem15)/4,2) as 'Điểm tổng kết'
             from hocsinh
             INNER JOIN lop ON hocsinh.malop = lop.malop
             INNER JOIN diem on hocsinh.mahs = diem.mahs
