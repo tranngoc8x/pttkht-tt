@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.data_dshs = new QLD.data_dshs();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.viewdshsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.data_dshs = new QLD.data_dshs();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.viewdshsTableAdapter = new QLD.data_dshsTableAdapters.viewdshsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.data_dshs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewdshsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_dshs)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // viewdshsBindingSource
             // 
-            reportDataSource2.Name = "data_dshs_viewdshs";
-            reportDataSource2.Value = this.viewdshsBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 39);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(927, 539);
-            this.reportViewer1.TabIndex = 0;
+            this.viewdshsBindingSource.DataMember = "viewdshs";
+            this.viewdshsBindingSource.DataSource = this.data_dshs;
             // 
             // data_dshs
             // 
             this.data_dshs.DataSetName = "data_dshs";
             this.data_dshs.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // viewdshsBindingSource
+            // reportViewer1
             // 
-            this.viewdshsBindingSource.DataMember = "viewdshs";
-            this.viewdshsBindingSource.DataSource = this.data_dshs;
+            reportDataSource1.Name = "data_dshs_viewdshs";
+            reportDataSource1.Value = this.viewdshsBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.rep_dshs.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(12, 39);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(786, 539);
+            this.reportViewer1.TabIndex = 0;
             // 
             // viewdshsTableAdapter
             // 
@@ -67,13 +67,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 598);
+            this.ClientSize = new System.Drawing.Size(801, 598);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frp";
             this.Text = "Báo cáo";
             this.Load += new System.EventHandler(this.frp_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.data_dshs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewdshsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_dshs)).EndInit();
             this.ResumeLayout(false);
 
         }

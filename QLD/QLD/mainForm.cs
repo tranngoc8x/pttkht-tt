@@ -47,6 +47,7 @@ namespace QLD
             }
             else
             {
+                conn.Close();
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(@"Select * from users where username = '"+user.Text+"' and password='"+pass.Text+"'", conn);
                 var check = cmd.ExecuteScalar();

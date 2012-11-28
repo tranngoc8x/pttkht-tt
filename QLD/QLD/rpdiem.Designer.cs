@@ -53,7 +53,7 @@
             reportDataSource1.Name = "QLDTHDataSet1_viewdiemhs";
             reportDataSource1.Value = this.viewdiemhsBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.Report2.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.rep_diem.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(13, 13);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(1116, 684);
