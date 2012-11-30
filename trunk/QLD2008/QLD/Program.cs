@@ -15,7 +15,7 @@ namespace QLD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fbaocaotket());
+            Application.Run(new mainform());
         }
     }
 }

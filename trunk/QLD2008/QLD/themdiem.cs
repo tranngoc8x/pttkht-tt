@@ -185,7 +185,7 @@ namespace QLD
             ins.Parameters.AddWithValue("@diem15", diem15);
             ins.Parameters.AddWithValue("@diem1tiet", diem45);
             ins.Parameters.AddWithValue("@diemthi", diemthi);
-            ins.Parameters.AddWithValue("@mauser", txttb.Text.ToString());
+            ins.Parameters.AddWithValue("@mauser", "1");
              try
             {
 

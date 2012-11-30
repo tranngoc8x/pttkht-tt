@@ -116,7 +116,7 @@ namespace QLD
 
         private void fdshs_Click(object sender, EventArgs e)
         {
-            fbaocaohocsinh baocao = new fbaocaohocsinh();
+            fbaocaohocs baocao = new fbaocaohocs();
             baocao.Show();
         }
 

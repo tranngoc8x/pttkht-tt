@@ -76,16 +76,17 @@
     <Compile Include="Connection\Connection.cs" />
     <Compile Include="DataSetDiem.cs">
       <DependentUpon>DataSetDiem.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSetDiem.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetDiem.xsd</DependentUpon>
     </Compile>
-    <Compile Include="data_dshs.Designer.cs">
+    <Compile Include="DataSetHS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>data_dshs.xsd</DependentUpon>
+      <DependentUpon>DataSetHS.xsd</DependentUpon>
     </Compile>
     <Compile Include="dshs.cs">
       <SubType>Form</SubType>
@@ -93,11 +94,11 @@
     <Compile Include="dshs.Designer.cs">
       <DependentUpon>dshs.cs</DependentUpon>
     </Compile>
-    <Compile Include="fbaocaohocsinh.cs">
+    <Compile Include="fbaocaohocs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fbaocaohocsinh.Designer.cs">
-      <DependentUpon>fbaocaohocsinh.cs</DependentUpon>
+    <Compile Include="fbaocaohocs.Designer.cs">
+      <DependentUpon>fbaocaohocs.cs</DependentUpon>
     </Compile>
     <Compile Include="fbaocaotket.cs">
       <SubType>Form</SubType>
@@ -117,8 +118,8 @@
       <DependentUpon>dshs.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="fbaocaohocsinh.resx">
-      <DependentUpon>fbaocaohocsinh.cs</DependentUpon>
+    <EmbeddedResource Include="fbaocaohocs.resx">
+      <DependentUpon>fbaocaohocs.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="fbaocaotket.resx">
@@ -134,7 +135,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="rep_dshs.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
     <EmbeddedResource Include="rep_tket.rdlc" />
     <EmbeddedResource Include="themdiem.resx">
       <DependentUpon>themdiem.cs</DependentUpon>
@@ -210,16 +213,16 @@
     <None Include="DataSetDiem.xss">
       <DependentUpon>DataSetDiem.xsd</DependentUpon>
     </None>
-    <None Include="data_dshs.xsc">
-      <DependentUpon>data_dshs.xsd</DependentUpon>
+    <None Include="DataSetHS.xsc">
+      <DependentUpon>DataSetHS.xsd</DependentUpon>
     </None>
-    <None Include="data_dshs.xsd">
+    <None Include="DataSetHS.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>data_dshs.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSetHS.Designer.cs</LastGenOutput>
     </None>
-    <None Include="data_dshs.xss">
-      <DependentUpon>data_dshs.xsd</DependentUpon>
+    <None Include="DataSetHS.xss">
+      <DependentUpon>DataSetHS.xsd</DependentUpon>
     </None>
     <None Include="Resources\hoavantrongdongvl5.png" />
   </ItemGroup>
