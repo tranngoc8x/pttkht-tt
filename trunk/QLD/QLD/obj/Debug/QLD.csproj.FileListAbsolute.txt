@@ -1,7 +1,6 @@
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\ResolveAssemblyReference.cache
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.mainForm.resources
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.Properties.Resources.resources
-F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.csproj.GenerateResource.Cache
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\bin\Debug\QLD.exe
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\bin\Debug\QLD.pdb
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.exe
@@ -13,4 +12,6 @@ F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\b
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.frp.resources
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\RdlCompile.cache
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\RdlCompile.compiled
-F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.rpdiem.resources
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD\obj\Debug\QLD.frpdiem.resources

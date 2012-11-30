@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -12,6 +12,26 @@
     <AssemblyName>QLD</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +41,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +50,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
@@ -65,6 +87,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\Connection.cs" />
+    <Compile Include="DataSetDiem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDiem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataSetDiem1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataSetDiem1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="data_dshs.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -81,6 +113,12 @@
     </Compile>
     <Compile Include="frp.Designer.cs">
       <DependentUpon>frp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frpdiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frpdiem.Designer.cs">
+      <DependentUpon>frpdiem.cs</DependentUpon>
     </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
@@ -104,6 +142,9 @@
       <DependentUpon>frp.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frpdiem.resx">
+      <DependentUpon>frpdiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -117,12 +158,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="rep_dshs.rdlc" />
     <EmbeddedResource Include="rep_diem.rdlc" />
-    <EmbeddedResource Include="rpdiem.resx">
-      <DependentUpon>rpdiem.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <EmbeddedResource Include="rep_dshs.rdlc" />
     <EmbeddedResource Include="themhs.resx">
       <DependentUpon>themhs.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -132,6 +169,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSetDiem.xsc">
+      <DependentUpon>DataSetDiem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDiem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDiem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetDiem.xss">
+      <DependentUpon>DataSetDiem.xsd</DependentUpon>
+    </None>
+    <None Include="dataSetDiem1.xsc">
+      <DependentUpon>dataSetDiem1.xsd</DependentUpon>
+    </None>
+    <None Include="dataSetDiem1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataSetDiem1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dataSetDiem1.xss">
+      <DependentUpon>dataSetDiem1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,21 +205,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDTHDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QLDTHDataSet1.cs">
-      <DependentUpon>QLDTHDataSet1.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="QLDTHDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLDTHDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="rpdiem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="rpdiem.Designer.cs">
-      <DependentUpon>rpdiem.cs</DependentUpon>
-    </Compile>
     <Compile Include="themhs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +213,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLDTHDataSet.xsc">
+      <DependentUpon>QLDTHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTHDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDTHDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDTHDataSet.xss">
+      <DependentUpon>QLDTHDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\387227_324702320887792_96944966_n.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -196,32 +251,27 @@
     <None Include="data_dshs.xss">
       <DependentUpon>data_dshs.xsd</DependentUpon>
     </None>
-    <None Include="QLDTHDataSet.xsc">
-      <DependentUpon>QLDTHDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLDTHDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLDTHDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLDTHDataSet.xss">
-      <DependentUpon>QLDTHDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLDTHDataSet1.xsc">
-      <DependentUpon>QLDTHDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="QLDTHDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLDTHDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLDTHDataSet1.xss">
-      <DependentUpon>QLDTHDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Resources\hoavantrongdongvl5.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

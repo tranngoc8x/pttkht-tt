@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="QLD">
+</Property><Property Name="Solution File" Value="F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD.sln">
+</Property><Property Name="User Options File" Value="F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\QLD.suo">
+</Property><Property Name="Date" Value="Thursday, November 29, 2012">
+</Property><Property Name="Time" Value="10:30 AM">
+</Property><Property Name="Log Number" Value="3">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="QLD.sln" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD.sln">
+</Event><Event ErrorLevel="0" Project="" Source="QLD.suo" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD.suo">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\QLD.csproj" Description="Project file successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\QLD.csproj">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\QLD.csproj.user" Description="Project user file successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\QLD.csproj.user">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Connection\Connection.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Connection\Connection.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\DataSetDiem.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\DataSetDiem.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\data_dshs.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\data_dshs.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\dshs.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\dshs.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\dshs.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\dshs.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\frp.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\frp.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\frp.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\frp.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\frpdiem.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\frpdiem.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\frpdiem.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\frpdiem.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\mainForm.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\mainForm.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\mainForm.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\mainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\nhapdiem.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\nhapdiem.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\nhapdiem.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\nhapdiem.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Program.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Program.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Properties\Resources.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Properties\Settings.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\themhs.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\themhs.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\themhs.Designer.cs" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\themhs.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\DataSetDiem.xsc" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\DataSetDiem.xsc">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\DataSetDiem.xsd" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\DataSetDiem.xsd">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\DataSetDiem.xss" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\DataSetDiem.xss">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Properties\Settings.settings" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Resources\387227_324702320887792_96944966_n.jpg" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Resources\387227_324702320887792_96944966_n.jpg">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Resources\Lock.png" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Resources\Lock.png">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Resources\Power Button.png" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Resources\Power Button.png">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Resources\THEME_109_HD_Background2.png" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Resources\THEME_109_HD_Background2.png">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Resources\THEME_109_HD_Background21.png" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Resources\THEME_109_HD_Background21.png">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\app.config" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\app.config">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\data_dshs.xsc" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\data_dshs.xsc">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\data_dshs.xsd" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\data_dshs.xsd">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\data_dshs.xss" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\data_dshs.xss">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Resources\hoavantrongdongvl5.png" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Resources\hoavantrongdongvl5.png">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\dshs.resx" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\dshs.resx">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\frp.resx" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\frp.resx">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\frpdiem.resx" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\frpdiem.resx">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\mainForm.resx" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\mainForm.resx">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\nhapdiem.resx" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\nhapdiem.resx">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\Properties\Resources.resx" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\rep_diem.rdlc" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\rep_diem.rdlc">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\rep_dshs.rdlc" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\rep_dshs.rdlc">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\themhs.resx" Description="File successfully backed up as F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD\Backup2\QLD\themhs.resx">
+</Event><Event ErrorLevel="0" Project="QLD" Source="QLD\QLD.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="QLD" Source="QLD\QLD.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="QLD.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="QLD.sln" Description="Converted">
+</Event></UpgradeLog>
