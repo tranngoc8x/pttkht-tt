@@ -276,6 +276,8 @@ namespace QLD {
             
             private global::System.Data.DataColumn columndiemthi;
             
+            private global::System.Data.DataColumn columnmaLop;
+            
             private global::System.Data.DataColumn columnmamon;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -358,6 +360,13 @@ namespace QLD {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn maLopColumn {
+                get {
+                    return this.columnmaLop;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public global::System.Data.DataColumn mamonColumn {
                 get {
                     return this.columnmamon;
@@ -393,7 +402,7 @@ namespace QLD {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public viewdiemhsRow AddviewdiemhsRow(string mahs, string hoten, string tenlop, int hocky, double diem15, double diem1tiet, double diemthi, string mamon) {
+            public viewdiemhsRow AddviewdiemhsRow(string mahs, string hoten, string tenlop, int hocky, double diem15, double diem1tiet, double diemthi, string maLop, string mamon) {
                 viewdiemhsRow rowviewdiemhsRow = ((viewdiemhsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         mahs,
@@ -403,6 +412,7 @@ namespace QLD {
                         diem15,
                         diem1tiet,
                         diemthi,
+                        maLop,
                         mamon};
                 rowviewdiemhsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowviewdiemhsRow);
@@ -430,6 +440,7 @@ namespace QLD {
                 this.columndiem15 = base.Columns["diem15"];
                 this.columndiem1tiet = base.Columns["diem1tiet"];
                 this.columndiemthi = base.Columns["diemthi"];
+                this.columnmaLop = base.Columns["maLop"];
                 this.columnmamon = base.Columns["mamon"];
             }
             
@@ -449,13 +460,15 @@ namespace QLD {
                 base.Columns.Add(this.columndiem1tiet);
                 this.columndiemthi = new global::System.Data.DataColumn("diemthi", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndiemthi);
+                this.columnmaLop = new global::System.Data.DataColumn("maLop", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmaLop);
                 this.columnmamon = new global::System.Data.DataColumn("mamon", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmamon);
-                this.columnmahs.AllowDBNull = false;
                 this.columnmahs.MaxLength = 10;
-                this.columnhoten.AllowDBNull = false;
                 this.columnhoten.MaxLength = 50;
                 this.columntenlop.MaxLength = 50;
+                this.columnhocky.AllowDBNull = false;
+                this.columnmaLop.MaxLength = 10;
                 this.columnmamon.MaxLength = 10;
             }
             
@@ -591,7 +604,12 @@ namespace QLD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public string mahs {
                 get {
-                    return ((string)(this[this.tableviewdiemhs.mahsColumn]));
+                    try {
+                        return ((string)(this[this.tableviewdiemhs.mahsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'mahs\' in table \'viewdiemhs\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableviewdiemhs.mahsColumn] = value;
@@ -601,7 +619,12 @@ namespace QLD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public string hoten {
                 get {
-                    return ((string)(this[this.tableviewdiemhs.hotenColumn]));
+                    try {
+                        return ((string)(this[this.tableviewdiemhs.hotenColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'hoten\' in table \'viewdiemhs\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableviewdiemhs.hotenColumn] = value;
@@ -626,12 +649,7 @@ namespace QLD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public int hocky {
                 get {
-                    try {
-                        return ((int)(this[this.tableviewdiemhs.hockyColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'hocky\' in table \'viewdiemhs\' is DBNull.", e);
-                    }
+                    return ((int)(this[this.tableviewdiemhs.hockyColumn]));
                 }
                 set {
                     this[this.tableviewdiemhs.hockyColumn] = value;
@@ -684,6 +702,21 @@ namespace QLD {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string maLop {
+                get {
+                    try {
+                        return ((string)(this[this.tableviewdiemhs.maLopColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'maLop\' in table \'viewdiemhs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableviewdiemhs.maLopColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public string mamon {
                 get {
                     try {
@@ -699,6 +732,26 @@ namespace QLD {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsmahsNull() {
+                return this.IsNull(this.tableviewdiemhs.mahsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetmahsNull() {
+                this[this.tableviewdiemhs.mahsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IshotenNull() {
+                return this.IsNull(this.tableviewdiemhs.hotenColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SethotenNull() {
+                this[this.tableviewdiemhs.hotenColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public bool IstenlopNull() {
                 return this.IsNull(this.tableviewdiemhs.tenlopColumn);
             }
@@ -706,16 +759,6 @@ namespace QLD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public void SettenlopNull() {
                 this[this.tableviewdiemhs.tenlopColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public bool IshockyNull() {
-                return this.IsNull(this.tableviewdiemhs.hockyColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public void SethockyNull() {
-                this[this.tableviewdiemhs.hockyColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -746,6 +789,16 @@ namespace QLD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public void SetdiemthiNull() {
                 this[this.tableviewdiemhs.diemthiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsmaLopNull() {
+                return this.IsNull(this.tableviewdiemhs.maLopColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetmaLopNull() {
+                this[this.tableviewdiemhs.maLopColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -916,6 +969,7 @@ namespace QLD.DataSetDiemTableAdapters {
             tableMapping.ColumnMappings.Add("diem15", "diem15");
             tableMapping.ColumnMappings.Add("diem1tiet", "diem1tiet");
             tableMapping.ColumnMappings.Add("diemthi", "diemthi");
+            tableMapping.ColumnMappings.Add("maLop", "maLop");
             tableMapping.ColumnMappings.Add("mamon", "mamon");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -931,16 +985,30 @@ namespace QLD.DataSetDiemTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT mahs, hoten, tenlop, hocky, diem15, diem1tiet, diemthi, mamon FROM dbo.vie" +
-                "wdiemhs";
+            this._commandCollection[0].CommandText = "SELECT      mahs, hoten, tenlop, hocky, diem15, diem1tiet, diemthi, maLop, mamon\r" +
+                "\nFROM          viewdiemhs\r\nWHERE      (mamon = @mamon) AND (maLop = @malop)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mamon", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "mamon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@malop", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "maLop", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSetDiem.viewdiemhsDataTable dataTable) {
+        public virtual int Fill(DataSetDiem.viewdiemhsDataTable dataTable, string mamon, string malop) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((mamon == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(mamon));
+            }
+            if ((malop == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(malop));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -951,8 +1019,20 @@ namespace QLD.DataSetDiemTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSetDiem.viewdiemhsDataTable GetData() {
+        public virtual DataSetDiem.viewdiemhsDataTable GetData(string mamon, string malop) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((mamon == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(mamon));
+            }
+            if ((malop == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(malop));
+            }
             DataSetDiem.viewdiemhsDataTable dataTable = new DataSetDiem.viewdiemhsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

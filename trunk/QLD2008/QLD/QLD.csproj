@@ -74,6 +74,9 @@
       <DependentUpon>CommonData.xsd</DependentUpon>
     </Compile>
     <Compile Include="Connection\Connection.cs" />
+    <Compile Include="DataSetDiem.cs">
+      <DependentUpon>DataSetDiem.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetDiem.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
