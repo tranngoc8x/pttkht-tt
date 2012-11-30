@@ -1,7 +1,6 @@
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\ResolveAssemblyReference.cache
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.fbaocaohocsinh.resources
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.fbaocaotket.resources
-F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.fthemdiem.resources
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.Properties.Resources.resources
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.csproj.GenerateResource.Cache
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\RdlCompile.cache
@@ -14,3 +13,4 @@ F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\Q
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.pdb
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.dshs.resources
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.themhs.resources
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.themdiem.resources

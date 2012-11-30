@@ -69,13 +69,15 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  <Width>8in</Width>
+  <Width>6.875in</Width>
   <Body>
     <ReportItems>
-      <Textbox Name="textbox14">
-        <Top>2.375in</Top>
-        <Width>2.5in</Width>
+      <Textbox Name="textbox16">
+        <Top>1.125in</Top>
+        <Width>1.625in</Width>
         <Style>
+          <FontSize>11pt</FontSize>
+          <FontWeight>700</FontWeight>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -83,14 +85,15 @@
         </Style>
         <ZIndex>4</ZIndex>
         <CanGrow>true</CanGrow>
-        <Left>5in</Left>
+        <Left>3.25in</Left>
         <Height>0.25in</Height>
-        <Value>Hà Nội, ngày ... tháng ... năm 201...</Value>
+        <Value>Bảng điểm tổng kết</Value>
       </Textbox>
-      <Textbox Name="textbox15">
-        <Top>2.625in</Top>
-        <Width>1in</Width>
+      <Textbox Name="textbox14">
+        <Top>2.375in</Top>
+        <Width>2.5in</Width>
         <Style>
+          <TextAlign>Left</TextAlign>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -98,9 +101,10 @@
         </Style>
         <ZIndex>3</ZIndex>
         <CanGrow>true</CanGrow>
-        <Left>5.875in</Left>
-        <Height>0.25in</Height>
-        <Value>Giáo viên</Value>
+        <Left>4.25in</Left>
+        <Height>0.5in</Height>
+        <Value>Hà Nội, ngày ... tháng ... năm 201...
+                        Giáo viên</Value>
       </Textbox>
       <Textbox Name="textbox13">
         <Top>0.125in</Top>
@@ -114,7 +118,7 @@
         </Style>
         <ZIndex>2</ZIndex>
         <CanGrow>true</CanGrow>
-        <Left>5in</Left>
+        <Left>4.125in</Left>
         <Height>0.375in</Height>
         <Value>Cộng hòa xã hội chủ nghĩa Việt Nam
 Độc lập - Tự do - Hạnh phúc</Value>
@@ -130,7 +134,7 @@
         </Style>
         <ZIndex>1</ZIndex>
         <CanGrow>true</CanGrow>
-        <Left>0.375in</Left>
+        <Left>0.625in</Left>
         <Height>0.625in</Height>
         <Value>Trường THPT Lương Thế Vinh
 Năm học : 2012 - 2013
@@ -140,21 +144,21 @@ Lớp 11A4
       <Matrix Name="matrix1">
         <MatrixColumns>
           <MatrixColumn>
-            <Width>1in</Width>
+            <Width>0.625in</Width>
           </MatrixColumn>
           <MatrixColumn>
-            <Width>1in</Width>
+            <Width>0.5in</Width>
           </MatrixColumn>
           <MatrixColumn>
-            <Width>1in</Width>
+            <Width>0.5in</Width>
           </MatrixColumn>
           <MatrixColumn>
-            <Width>1in</Width>
+            <Width>0.5in</Width>
           </MatrixColumn>
         </MatrixColumns>
         <RowGroupings>
           <RowGrouping>
-            <Width>1in</Width>
+            <Width>1.625in</Width>
             <DynamicRows>
               <Grouping Name="matrix1_RowGroup1">
                 <GroupExpressions>
@@ -232,7 +236,7 @@ Lớp 11A4
                     </Style>
                     <ZIndex>8</ZIndex>
                     <CanGrow>true</CanGrow>
-                    <Value>Điểm 15 phút</Value>
+                    <Value>15 phút</Value>
                   </Textbox>
                 </ReportItems>
               </StaticColumn>
@@ -253,7 +257,7 @@ Lớp 11A4
                     </Style>
                     <ZIndex>7</ZIndex>
                     <CanGrow>true</CanGrow>
-                    <Value>Điểm 1 tiết</Value>
+                    <Value>1 tiết</Value>
                   </Textbox>
                 </ReportItems>
               </StaticColumn>
@@ -274,7 +278,7 @@ Lớp 11A4
                     </Style>
                     <ZIndex>6</ZIndex>
                     <CanGrow>true</CanGrow>
-                    <Value>Điểm thi</Value>
+                    <Value>Thi</Value>
                   </Textbox>
                 </ReportItems>
               </StaticColumn>
@@ -295,14 +299,14 @@ Lớp 11A4
                     </Style>
                     <ZIndex>5</ZIndex>
                     <CanGrow>true</CanGrow>
-                    <Value>Tổng kết hk</Value>
+                    <Value>TB</Value>
                   </Textbox>
                 </ReportItems>
               </StaticColumn>
             </StaticColumns>
           </ColumnGrouping>
         </ColumnGroupings>
-        <Width>5in</Width>
+        <Width>3.75in</Width>
         <Corner>
           <ReportItems>
             <Textbox Name="textbox1">
@@ -412,7 +416,7 @@ Lớp 11A4
           </MatrixRow>
         </MatrixRows>
         <Height>0.75in</Height>
-        <Left>0.375in</Left>
+        <Left>0.625in</Left>
       </Matrix>
     </ReportItems>
     <Height>3.875in</Height>

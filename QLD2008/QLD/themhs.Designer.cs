@@ -156,7 +156,7 @@
             this.txtque.Multiline = true;
             this.txtque.Name = "txtque";
             this.txtque.Size = new System.Drawing.Size(184, 64);
-            this.txtque.TabIndex = 12;
+            this.txtque.TabIndex = 8;
             // 
             // labelX5
             // 
@@ -181,7 +181,7 @@
             this.txttongiao.Location = new System.Drawing.Point(130, 215);
             this.txttongiao.Name = "txttongiao";
             this.txttongiao.Size = new System.Drawing.Size(127, 20);
-            this.txttongiao.TabIndex = 14;
+            this.txttongiao.TabIndex = 4;
             // 
             // labelX6
             // 
@@ -206,7 +206,7 @@
             this.txtuutien.Location = new System.Drawing.Point(130, 255);
             this.txtuutien.Name = "txtuutien";
             this.txtuutien.Size = new System.Drawing.Size(127, 20);
-            this.txtuutien.TabIndex = 16;
+            this.txtuutien.TabIndex = 5;
             // 
             // labelX7
             // 
@@ -231,7 +231,7 @@
             this.txtbo.Location = new System.Drawing.Point(493, 133);
             this.txtbo.Name = "txtbo";
             this.txtbo.Size = new System.Drawing.Size(125, 20);
-            this.txtbo.TabIndex = 18;
+            this.txtbo.TabIndex = 9;
             // 
             // labelX8
             // 
@@ -257,7 +257,7 @@
             this.txtnbo.Multiline = true;
             this.txtnbo.Name = "txtnbo";
             this.txtnbo.Size = new System.Drawing.Size(184, 59);
-            this.txtnbo.TabIndex = 20;
+            this.txtnbo.TabIndex = 10;
             // 
             // labelX9
             // 
@@ -282,7 +282,7 @@
             this.txtme.Location = new System.Drawing.Point(493, 251);
             this.txtme.Name = "txtme";
             this.txtme.Size = new System.Drawing.Size(125, 20);
-            this.txtme.TabIndex = 22;
+            this.txtme.TabIndex = 11;
             // 
             // labelX10
             // 
@@ -308,7 +308,7 @@
             this.txtnme.Multiline = true;
             this.txtnme.Name = "txtnme";
             this.txtnme.Size = new System.Drawing.Size(184, 57);
-            this.txtnme.TabIndex = 24;
+            this.txtnme.TabIndex = 12;
             // 
             // labelX11
             // 
@@ -331,7 +331,7 @@
             this.btnthemhs.Name = "btnthemhs";
             this.btnthemhs.Size = new System.Drawing.Size(75, 23);
             this.btnthemhs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnthemhs.TabIndex = 26;
+            this.btnthemhs.TabIndex = 13;
             this.btnthemhs.Text = "Thêm mới";
             this.btnthemhs.Click += new System.EventHandler(this.btnthemhs_Click);
             // 
@@ -343,7 +343,7 @@
             this.btnclosethemhs.Name = "btnclosethemhs";
             this.btnclosethemhs.Size = new System.Drawing.Size(75, 23);
             this.btnclosethemhs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnclosethemhs.TabIndex = 27;
+            this.btnclosethemhs.TabIndex = 15;
             this.btnclosethemhs.Text = "Đóng";
             this.btnclosethemhs.Click += new System.EventHandler(this.btnclosethemhs_Click);
             // 
@@ -395,8 +395,9 @@
             this.btnhuy.Name = "btnhuy";
             this.btnhuy.Size = new System.Drawing.Size(75, 23);
             this.btnhuy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnhuy.TabIndex = 33;
+            this.btnhuy.TabIndex = 14;
             this.btnhuy.Text = "Nhập lại";
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // cbgioitinh
             // 
@@ -404,7 +405,7 @@
             this.cbgioitinh.Location = new System.Drawing.Point(130, 176);
             this.cbgioitinh.Name = "cbgioitinh";
             this.cbgioitinh.Size = new System.Drawing.Size(126, 21);
-            this.cbgioitinh.TabIndex = 34;
+            this.cbgioitinh.TabIndex = 3;
             // 
             // cblop
             // 
@@ -414,7 +415,7 @@
             this.cblop.Location = new System.Drawing.Point(131, 329);
             this.cblop.Name = "cblop";
             this.cblop.Size = new System.Drawing.Size(126, 21);
-            this.cblop.TabIndex = 35;
+            this.cblop.TabIndex = 7;
             this.cblop.ValueMember = "maLop";
             // 
             // listlopBindingSource
@@ -435,7 +436,7 @@
             this.cbnamhoc.Location = new System.Drawing.Point(131, 290);
             this.cbnamhoc.Name = "cbnamhoc";
             this.cbnamhoc.Size = new System.Drawing.Size(126, 21);
-            this.cbnamhoc.TabIndex = 36;
+            this.cbnamhoc.TabIndex = 6;
             this.cbnamhoc.ValueMember = "manamhoc";
             this.cbnamhoc.SelectedIndexChanged += new System.EventHandler(this.cbnamhoc_SelectedIndexChanged);
             // 
@@ -458,7 +459,7 @@
             this.txtngaysinh.Location = new System.Drawing.Point(130, 131);
             this.txtngaysinh.Name = "txtngaysinh";
             this.txtngaysinh.Size = new System.Drawing.Size(127, 20);
-            this.txtngaysinh.TabIndex = 37;
+            this.txtngaysinh.TabIndex = 2;
             // 
             // themhs
             // 

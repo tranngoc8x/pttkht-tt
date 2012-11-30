@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.griddshs = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.btnxem = new DevComponents.DotNetBar.ButtonX();
@@ -38,39 +38,40 @@
             this.closehs = new DevComponents.DotNetBar.ButtonX();
             this.btnthemhs = new DevComponents.DotNetBar.ButtonX();
             this.cblop = new System.Windows.Forms.ComboBox();
+            this.listlopBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.commonData = new QLD.CommonData();
             this.cbnamhoc = new System.Windows.Forms.ComboBox();
             this.listnamhocBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.commonData = new QLD.CommonData();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.list_namhocTableAdapter = new QLD.CommonDataTableAdapters.list_namhocTableAdapter();
-            this.listlopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.list_lopTableAdapter = new QLD.CommonDataTableAdapters.list_lopTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.griddshs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listnamhocBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.commonData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listlopBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commonData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listnamhocBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // griddshs
             // 
-            this.griddshs.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.griddshs.BackgroundColor = System.Drawing.Color.White;
             this.griddshs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.griddshs.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.griddshs.DefaultCellStyle = dataGridViewCellStyle2;
             this.griddshs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.griddshs.Location = new System.Drawing.Point(12, 76);
+            this.griddshs.Location = new System.Drawing.Point(12, 71);
             this.griddshs.Name = "griddshs";
             this.griddshs.Size = new System.Drawing.Size(608, 260);
             this.griddshs.TabIndex = 0;
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
@@ -103,6 +104,7 @@
             this.btnsuahs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnsuahs.TabIndex = 5;
             this.btnsuahs.Text = "Sửa thông tin";
+            this.btnsuahs.Click += new System.EventHandler(this.btnsuahs_Click);
             // 
             // btnxoahs
             // 
@@ -114,6 +116,7 @@
             this.btnxoahs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnxoahs.TabIndex = 6;
             this.btnxoahs.Text = "Xóa học sinh";
+            this.btnxoahs.Click += new System.EventHandler(this.btnxoahs_Click);
             // 
             // closehs
             // 
@@ -141,7 +144,6 @@
             // 
             // cblop
             // 
-            this.cblop.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listlopBindingSource, "tenlop", true));
             this.cblop.DataSource = this.listlopBindingSource;
             this.cblop.DisplayMember = "tenlop";
             this.cblop.FormattingEnabled = true;
@@ -151,6 +153,16 @@
             this.cblop.Size = new System.Drawing.Size(105, 21);
             this.cblop.TabIndex = 2;
             this.cblop.ValueMember = "maLop";
+            // 
+            // listlopBindingSource
+            // 
+            this.listlopBindingSource.DataMember = "list_lop";
+            this.listlopBindingSource.DataSource = this.commonData;
+            // 
+            // commonData
+            // 
+            this.commonData.DataSetName = "CommonData";
+            this.commonData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cbnamhoc
             // 
@@ -169,13 +181,9 @@
             this.listnamhocBindingSource.DataMember = "list_namhoc";
             this.listnamhocBindingSource.DataSource = this.commonData;
             // 
-            // commonData
-            // 
-            this.commonData.DataSetName = "CommonData";
-            this.commonData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // labelX2
             // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
@@ -190,11 +198,6 @@
             // 
             this.list_namhocTableAdapter.ClearBeforeFill = true;
             // 
-            // listlopBindingSource
-            // 
-            this.listlopBindingSource.DataMember = "list_lop";
-            this.listlopBindingSource.DataSource = this.commonData;
-            // 
             // list_lopTableAdapter
             // 
             this.list_lopTableAdapter.ClearBeforeFill = true;
@@ -204,6 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = global::QLD.Properties.Resources.hoavantrongdongvl5;
             this.ClientSize = new System.Drawing.Size(632, 400);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.cbnamhoc);
@@ -215,13 +219,14 @@
             this.Controls.Add(this.btnxem);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.griddshs);
+            this.DoubleBuffered = true;
             this.Name = "dshs";
             this.Text = "Danh sách học sinh";
             this.Load += new System.EventHandler(this.dshs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.griddshs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listnamhocBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.commonData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listlopBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commonData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listnamhocBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

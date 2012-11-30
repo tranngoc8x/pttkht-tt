@@ -108,12 +108,6 @@
     <Compile Include="mainForm.Designer.cs">
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="nhapdiem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="nhapdiem.Designer.cs">
-      <DependentUpon>nhapdiem.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="dshs.resx">
@@ -132,10 +126,6 @@
       <DependentUpon>mainForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="nhapdiem.resx">
-      <DependentUpon>nhapdiem.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -143,6 +133,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rep_dshs.rdlc" />
     <EmbeddedResource Include="rep_tket.rdlc" />
+    <EmbeddedResource Include="themdiem.resx">
+      <DependentUpon>themdiem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="themhs.resx">
       <DependentUpon>themhs.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -160,6 +154,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="themdiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themdiem.Designer.cs">
+      <DependentUpon>themdiem.cs</DependentUpon>
     </Compile>
     <Compile Include="themhs.cs">
       <SubType>Form</SubType>
@@ -222,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -62,16 +62,18 @@ namespace QLD
                 conn.Open();
             }
             catch { }
-           SqlDataReader dreader = cmd.ExecuteReader();
-           if (dreader.Read())
+            SqlDataReader dreader = cmd.ExecuteReader();
+            if (dreader.Read())
             {
-                if(Convert.ToInt32(dreader.GetValue(0))>0){
-                    MessageBox.Show("Mã học sinh đã tồn tại. Hãy nhập mã khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+            if(Convert.ToInt32(dreader.GetValue(0))>0){
+                MessageBox.Show("Mã học sinh đã tồn tại. Hãy nhập mã khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-           dreader.Dispose();
-           dreader.Close();
+            }
+            dreader.Dispose();
+            dreader.Close();
+
+            //check lop
             string lophoc = "";
             if (cblop.Items.Count > 0)
             {
@@ -86,7 +88,7 @@ namespace QLD
             //chwck giới tính
 
             string gioitinh = "";
-            if (cblop.Items.Count > 0)
+            if (cbgioitinh.Items.Count > 0)
             {
                 gioitinh = cbgioitinh.SelectedIndex.ToString();
             }
@@ -95,8 +97,6 @@ namespace QLD
                 MessageBox.Show("Bạn chưa chọn giới tính!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-
             //insert  data
             SqlCommand ins = new SqlCommand("themhs", conn);
             ins.CommandType = CommandType.StoredProcedure;
@@ -117,15 +117,18 @@ namespace QLD
             ins.Parameters.AddWithValue("@mauser", txthoten.Text.ToString());
             try
             {
-                ins.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Bạn có chắc muôn thêm học sinh này không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                txthoten.Text = "";
-                txtque.Text = "";
-                txtbo.Text = "";
-                txtme.Text = "";
-                txtnbo.Text = "";
-                txtnme.Text = "";
+                
+                if (MessageBox.Show("Bạn có chắc muốn thêm học sinh này không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes )
+                {
+                    ins.ExecuteNonQuery();
+                    conn.Close();
+                    txthoten.Text = "";
+                    txtque.Text = "";
+                    txtbo.Text = "";
+                    txtme.Text = "";
+                    txtnbo.Text = "";
+                    txtnme.Text = "";
+                }
             }
             catch (Exception ex)
             {
@@ -141,6 +144,22 @@ namespace QLD
                 this.list_lopTableAdapter.Fill(this.commonData.list_lop, namhoc);
             }
             catch { }
+        }
+
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+            txtbo.Text = "";
+            txtmahs.Text = "";
+            txthoten.Text = "";
+            txtme.Text = "";
+            txtnbo.Text = "";
+            txtngaysinh.Text = "";
+            txtnme.Text = "";
+            txtque.Text = "";
+            txttongiao.Text = "";
+            txtuutien.Text = "";
+            cbgioitinh.SelectedText = null;
+            cbnamhoc.SelectedIndex = 0;
         }
     }
 }

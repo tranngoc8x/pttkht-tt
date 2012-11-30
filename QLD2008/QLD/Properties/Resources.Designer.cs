@@ -67,6 +67,13 @@ namespace QLD.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap hoavantrongdongvl5 {
             get {
                 object obj = ResourceManager.GetObject("hoavantrongdongvl5", resourceCulture);

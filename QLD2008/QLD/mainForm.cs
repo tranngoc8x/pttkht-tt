@@ -103,7 +103,7 @@ namespace QLD
 
         private void nhapdiem_Click(object sender, EventArgs e)
         {
-            fthemdiem nhapdiem = new fthemdiem();
+            themdiem nhapdiem = new themdiem();
             nhapdiem.Show();
         }
 
@@ -118,6 +118,16 @@ namespace QLD
         {
             fbaocaohocsinh baocao = new fbaocaohocsinh();
             baocao.Show();
+        }
+
+        private void help_Click(object sender, EventArgs e)
+        {
+            panel_infor.Visible = true;
+        }
+
+        private void close_inf_Click(object sender, EventArgs e)
+        {
+            panel_infor.Visible = false;
         }
     }
 }
