@@ -22,7 +22,6 @@ namespace QLD
         {
             // TODO: This line of code loads data into the 'commonData.view_listdiem' table. You can move, or remove it, as needed.
             this.view_listdiemTableAdapter.Fill(this.commonData.view_listdiem);
-            // TODO: This line of code loads data into the 'dataSetDiem.viewdiemhs' table. You can move, or remove it, as needed.
             // TODO: This line of code loads data into the 'commonData.list_monhoc' table. You can move, or remove it, as needed.
             this.list_monhocTableAdapter.Fill(this.commonData.list_monhoc);
             // TODO: This line of code loads data into the 'commonData.list_namhoc' table. You can move, or remove it, as needed.
