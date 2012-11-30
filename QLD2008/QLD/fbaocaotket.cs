@@ -18,16 +18,10 @@ namespace QLD
 
         private void fbaocaotket_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'commonData.list_monhoc' table. You can move, or remove it, as needed.
             this.list_monhocTableAdapter.Fill(this.commonData.list_monhoc);
-            // TODO: This line of code loads data into the 'commonData.list_namhoc' table. You can move, or remove it, as needed.
             this.list_namhocTableAdapter.Fill(this.commonData.list_namhoc);
             string namhoc = cbnamhoc.SelectedValue.ToString();
             this.list_lopTableAdapter.Fill(this.commonData.list_lop, namhoc);
-            // TODO: This line of code loads data into the 'dataSetDiem.viewdiemhs' table. You can move, or remove it, as needed.
-           // this.viewdiemhsTableAdapter.Fill(this.dataSetDiem.viewdiemhs, cbmon.SelectedValue.ToString(), cblop.SelectedValue.ToString());
-            this.reportViewer1.Visible = false;
-            this.reportViewer1.RefreshReport();
         }
 
         private void cbnamhoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,12 +52,11 @@ namespace QLD
             {
                 this.reportViewer1.Visible = true;
                 this.reportViewer1.RefreshReport();
-                panel_norecord.Visible = false;
+               // panel_norecord.Visible = false;
             }
             else
             {
-                panel_norecord.Visible = true;
-                lberror.Visible = true;
+                MessageBox.Show("Không có bản ghi nào !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

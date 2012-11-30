@@ -114,7 +114,7 @@ namespace QLD
             ins.Parameters.AddWithValue("@nghebo", txtnbo.Text.ToString());
             ins.Parameters.AddWithValue("@ngheme", txtnme.Text.ToString());
             ins.Parameters.AddWithValue("@gioitinh", Convert.ToInt32(cbgioitinh.SelectedIndex));
-            ins.Parameters.AddWithValue("@mauser", txthoten.Text.ToString());
+            ins.Parameters.AddWithValue("@mauser", "1");
             try
             {
                 

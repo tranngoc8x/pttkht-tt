@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.viewdiemhsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetDiem = new QLD.DataSetDiem();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -48,15 +48,12 @@
             this.list_monhocTableAdapter = new QLD.CommonDataTableAdapters.list_monhocTableAdapter();
             this.list_lopTableAdapter = new QLD.CommonDataTableAdapters.list_lopTableAdapter();
             this.btnxembc = new DevComponents.DotNetBar.ButtonX();
-            this.panel_norecord = new System.Windows.Forms.Panel();
-            this.lberror = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.viewdiemhsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listnamhocBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commonData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listlopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listmonhocBindingSource)).BeginInit();
-            this.panel_norecord.SuspendLayout();
             this.SuspendLayout();
             // 
             // viewdiemhsBindingSource
@@ -71,11 +68,11 @@
             // 
             // reportViewer1
             // 
-            reportDataSource4.Name = "DataSetDiem_viewdiemhs";
-            reportDataSource4.Value = this.viewdiemhsBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.rep_tket.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(-6, 44);
+            reportDataSource1.Name = "DataSetDiem_viewdiemhs";
+            reportDataSource1.Value = this.viewdiemhsBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.Report3.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(-13, 42);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(685, 599);
             this.reportViewer1.TabIndex = 0;
@@ -192,33 +189,13 @@
             this.btnxembc.Text = "Xem";
             this.btnxembc.Click += new System.EventHandler(this.btnxembc_Click);
             // 
-            // panel_norecord
-            // 
-            this.panel_norecord.Controls.Add(this.lberror);
-            this.panel_norecord.Location = new System.Drawing.Point(-6, 44);
-            this.panel_norecord.Name = "panel_norecord";
-            this.panel_norecord.Size = new System.Drawing.Size(685, 599);
-            this.panel_norecord.TabIndex = 15;
-            // 
-            // lberror
-            // 
-            this.lberror.AutoSize = true;
-            this.lberror.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lberror.Location = new System.Drawing.Point(271, 142);
-            this.lberror.Name = "lberror";
-            this.lberror.Size = new System.Drawing.Size(148, 31);
-            this.lberror.TabIndex = 0;
-            this.lberror.Text = "No record !";
-            this.lberror.Visible = false;
-            // 
             // fbaocaotket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::QLD.Properties.Resources.hoavantrongdongvl5;
-            this.ClientSize = new System.Drawing.Size(684, 640);
-            this.Controls.Add(this.panel_norecord);
+            this.ClientSize = new System.Drawing.Size(673, 640);
             this.Controls.Add(this.btnxembc);
             this.Controls.Add(this.cbmon);
             this.Controls.Add(this.label2);
@@ -236,8 +213,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.commonData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listlopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listmonhocBindingSource)).EndInit();
-            this.panel_norecord.ResumeLayout(false);
-            this.panel_norecord.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +238,5 @@
         private System.Windows.Forms.BindingSource listlopBindingSource;
         private QLD.CommonDataTableAdapters.list_lopTableAdapter list_lopTableAdapter;
         private DevComponents.DotNetBar.ButtonX btnxembc;
-        private System.Windows.Forms.Panel panel_norecord;
-        private System.Windows.Forms.Label lberror;
     }
 }
