@@ -35,8 +35,8 @@ namespace QLD
             }catch{}
             cmd.Parameters.AddWithValue("@ma", lop);
             da.SelectCommand = cmd;
-            da.Fill(dths);
             griddshs.DataSource = dths;
+            da.Fill(dths);
             conn.Close();
         }
 
@@ -64,6 +64,7 @@ namespace QLD
 
         private void btnxem_Click(object sender, EventArgs e)
         {
+            DataTable find = new DataTable("hocsinh");
             string lophoc = "";
             if (cblop.Items.Count > 0)
             {
@@ -84,11 +85,21 @@ namespace QLD
             }
             catch { }
             cmd.Parameters.AddWithValue("@ma", lop);
+            cmd.ExecuteNonQuery();
             da.SelectCommand = cmd;
-            da.Fill(dths);
-            griddshs.Refresh();
-            griddshs.DataSource = dths;
+            griddshs.DataSource = find;
+            da.Fill(find);
             conn.Close();
+        }
+
+        private void btnsuahs_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng đang trong quá trình xây dựng. Hãy thử lại sau.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnxoahs_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng đang trong quá trình xây dựng. Hãy thử lại sau.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
        

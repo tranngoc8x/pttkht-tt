@@ -30,35 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dataSetDiem = new QLD.DataSetDiem();
             this.viewdiemhsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetDiem = new QLD.DataSetDiem();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.viewdiemhsTableAdapter = new QLD.DataSetDiemTableAdapters.viewdiemhsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewdiemhsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // viewdiemhsBindingSource
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSetDiem_viewdiemhs";
-            reportDataSource1.Value = this.viewdiemhsBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.rep_tket.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1134, 444);
-            this.reportViewer1.TabIndex = 0;
+            this.viewdiemhsBindingSource.DataMember = "viewdiemhs";
+            this.viewdiemhsBindingSource.DataSource = this.dataSetDiem;
             // 
             // dataSetDiem
             // 
             this.dataSetDiem.DataSetName = "DataSetDiem";
             this.dataSetDiem.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // viewdiemhsBindingSource
+            // reportViewer1
             // 
-            this.viewdiemhsBindingSource.DataMember = "viewdiemhs";
-            this.viewdiemhsBindingSource.DataSource = this.dataSetDiem;
+            reportDataSource1.Name = "DataSetDiem_viewdiemhs";
+            reportDataSource1.Value = this.viewdiemhsBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLD.rep_tket.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 44);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(685, 599);
+            this.reportViewer1.TabIndex = 0;
             // 
             // viewdiemhsTableAdapter
             // 
@@ -68,13 +67,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 444);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::QLD.Properties.Resources.hoavantrongdongvl5;
+            this.ClientSize = new System.Drawing.Size(684, 640);
             this.Controls.Add(this.reportViewer1);
             this.Name = "fbaocaotket";
             this.Text = "fbaocaotket";
             this.Load += new System.EventHandler(this.fbaocaotket_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewdiemhsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).EndInit();
             this.ResumeLayout(false);
 
         }

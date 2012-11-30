@@ -262,6 +262,8 @@ namespace QLD {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class viewdiemhsDataTable : global::System.Data.TypedTableBase<viewdiemhsRow> {
             
+            private global::System.Data.DataColumn columnmahs;
+            
             private global::System.Data.DataColumn columnhoten;
             
             private global::System.Data.DataColumn columntenlop;
@@ -275,8 +277,6 @@ namespace QLD {
             private global::System.Data.DataColumn columndiemthi;
             
             private global::System.Data.DataColumn columnmamon;
-            
-            private global::System.Data.DataColumn columnmahs;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public viewdiemhsDataTable() {
@@ -306,6 +306,13 @@ namespace QLD {
             protected viewdiemhsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn mahsColumn {
+                get {
+                    return this.columnmahs;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -358,13 +365,6 @@ namespace QLD {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public global::System.Data.DataColumn mahsColumn {
-                get {
-                    return this.columnmahs;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -393,17 +393,17 @@ namespace QLD {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public viewdiemhsRow AddviewdiemhsRow(string hoten, string tenlop, int hocky, double diem15, double diem1tiet, double diemthi, string mamon, string mahs) {
+            public viewdiemhsRow AddviewdiemhsRow(string mahs, string hoten, string tenlop, int hocky, double diem15, double diem1tiet, double diemthi, string mamon) {
                 viewdiemhsRow rowviewdiemhsRow = ((viewdiemhsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        mahs,
                         hoten,
                         tenlop,
                         hocky,
                         diem15,
                         diem1tiet,
                         diemthi,
-                        mamon,
-                        mahs};
+                        mamon};
                 rowviewdiemhsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowviewdiemhsRow);
                 return rowviewdiemhsRow;
@@ -423,6 +423,7 @@ namespace QLD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal void InitVars() {
+                this.columnmahs = base.Columns["mahs"];
                 this.columnhoten = base.Columns["hoten"];
                 this.columntenlop = base.Columns["tenlop"];
                 this.columnhocky = base.Columns["hocky"];
@@ -430,11 +431,12 @@ namespace QLD {
                 this.columndiem1tiet = base.Columns["diem1tiet"];
                 this.columndiemthi = base.Columns["diemthi"];
                 this.columnmamon = base.Columns["mamon"];
-                this.columnmahs = base.Columns["mahs"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             private void InitClass() {
+                this.columnmahs = new global::System.Data.DataColumn("mahs", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmahs);
                 this.columnhoten = new global::System.Data.DataColumn("hoten", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnhoten);
                 this.columntenlop = new global::System.Data.DataColumn("tenlop", typeof(string), null, global::System.Data.MappingType.Element);
@@ -449,13 +451,12 @@ namespace QLD {
                 base.Columns.Add(this.columndiemthi);
                 this.columnmamon = new global::System.Data.DataColumn("mamon", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmamon);
-                this.columnmahs = new global::System.Data.DataColumn("mahs", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmahs);
+                this.columnmahs.AllowDBNull = false;
+                this.columnmahs.MaxLength = 10;
+                this.columnhoten.AllowDBNull = false;
                 this.columnhoten.MaxLength = 50;
                 this.columntenlop.MaxLength = 50;
                 this.columnmamon.MaxLength = 10;
-                this.columnmahs.AllowDBNull = false;
-                this.columnmahs.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -588,14 +589,19 @@ namespace QLD {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string mahs {
+                get {
+                    return ((string)(this[this.tableviewdiemhs.mahsColumn]));
+                }
+                set {
+                    this[this.tableviewdiemhs.mahsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public string hoten {
                 get {
-                    try {
-                        return ((string)(this[this.tableviewdiemhs.hotenColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'hoten\' in table \'viewdiemhs\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableviewdiemhs.hotenColumn]));
                 }
                 set {
                     this[this.tableviewdiemhs.hotenColumn] = value;
@@ -690,26 +696,6 @@ namespace QLD {
                 set {
                     this[this.tableviewdiemhs.mamonColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public string mahs {
-                get {
-                    return ((string)(this[this.tableviewdiemhs.mahsColumn]));
-                }
-                set {
-                    this[this.tableviewdiemhs.mahsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public bool IshotenNull() {
-                return this.IsNull(this.tableviewdiemhs.hotenColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public void SethotenNull() {
-                this[this.tableviewdiemhs.hotenColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -923,6 +909,7 @@ namespace QLD.DataSetDiemTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "viewdiemhs";
+            tableMapping.ColumnMappings.Add("mahs", "mahs");
             tableMapping.ColumnMappings.Add("hoten", "hoten");
             tableMapping.ColumnMappings.Add("tenlop", "tenlop");
             tableMapping.ColumnMappings.Add("hocky", "hocky");
@@ -930,7 +917,6 @@ namespace QLD.DataSetDiemTableAdapters {
             tableMapping.ColumnMappings.Add("diem1tiet", "diem1tiet");
             tableMapping.ColumnMappings.Add("diemthi", "diemthi");
             tableMapping.ColumnMappings.Add("mamon", "mamon");
-            tableMapping.ColumnMappings.Add("mahs", "mahs");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -945,7 +931,7 @@ namespace QLD.DataSetDiemTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT hoten, tenlop, hocky, diem15, diem1tiet, diemthi, mamon, mahs FROM dbo.vie" +
+            this._commandCollection[0].CommandText = "SELECT mahs, hoten, tenlop, hocky, diem15, diem1tiet, diemthi, mamon FROM dbo.vie" +
                 "wdiemhs";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }

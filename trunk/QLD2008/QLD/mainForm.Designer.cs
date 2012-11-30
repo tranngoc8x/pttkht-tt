@@ -64,9 +64,19 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.panel_infor = new System.Windows.Forms.Panel();
+            this.close_inf = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.mainmenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panellogin.SuspendLayout();
+            this.panel_infor.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainmenu
@@ -127,6 +137,7 @@
             this.help.Name = "help";
             this.help.Size = new System.Drawing.Size(166, 22);
             this.help.Text = "Trợ giúp";
+            this.help.Click += new System.EventHandler(this.help_Click);
             // 
             // quit
             // 
@@ -407,12 +418,111 @@
             this.labelX1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
+            // panel_infor
+            // 
+            this.panel_infor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel_infor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel_infor.Controls.Add(this.close_inf);
+            this.panel_infor.Controls.Add(this.linkLabel1);
+            this.panel_infor.Controls.Add(this.label5);
+            this.panel_infor.Controls.Add(this.label4);
+            this.panel_infor.Controls.Add(this.label3);
+            this.panel_infor.Controls.Add(this.label2);
+            this.panel_infor.Controls.Add(this.label1);
+            this.panel_infor.Location = new System.Drawing.Point(88, 60);
+            this.panel_infor.Name = "panel_infor";
+            this.panel_infor.Size = new System.Drawing.Size(527, 335);
+            this.panel_infor.TabIndex = 4;
+            this.panel_infor.Visible = false;
+            // 
+            // close_inf
+            // 
+            this.close_inf.AutoSize = true;
+            this.close_inf.BackColor = System.Drawing.Color.Transparent;
+            this.close_inf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close_inf.Image = global::QLD.Properties.Resources.close;
+            this.close_inf.Location = new System.Drawing.Point(506, 1);
+            this.close_inf.Name = "close_inf";
+            this.close_inf.Padding = new System.Windows.Forms.Padding(3);
+            this.close_inf.Size = new System.Drawing.Size(16, 19);
+            this.close_inf.TabIndex = 6;
+            this.close_inf.Text = " ";
+            this.close_inf.Click += new System.EventHandler(this.close_inf_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(143, 147);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(146, 13);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "tranngocthang89@gmail.com";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Blue;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(106, 147);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Email : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(105, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "K15B-SE";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(104, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(140, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Create by Trần Ngọc Thắng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(106, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Version 1.0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(103, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(306, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hệ thống quản lý điểm học sinh trung học phổ thông";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(612, 485);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Quản Lý Điểm - v1.0";
+            // 
             // mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QLD.Properties.Resources.THEME_109_HD_Background21;
             this.ClientSize = new System.Drawing.Size(720, 502);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel_infor);
             this.Controls.Add(this.panellogin);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.mainmenu);
@@ -426,6 +536,8 @@
             this.statusStrip1.PerformLayout();
             this.panellogin.ResumeLayout(false);
             this.panellogin.PerformLayout();
+            this.panel_infor.ResumeLayout(false);
+            this.panel_infor.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,6 +581,15 @@
         private System.Windows.Forms.ToolStripMenuItem logout;
         private DevComponents.DotNetBar.ButtonX exitapp;
         private System.Windows.Forms.ToolStripMenuItem mndsmonhoc;
+        private System.Windows.Forms.Panel panel_infor;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label close_inf;
+        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -12,13 +12,14 @@
               <DbSource ConnectionRef="QLDTHConnectionString (Settings)" DbObjectName="QLDTH.dbo.viewdiemhs" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT hoten, tenlop, hocky, diem15, diem1tiet, diemthi, mamon, mahs FROM dbo.viewdiemhs</CommandText>
+                    <CommandText>SELECT mahs, hoten, tenlop, hocky, diem15, diem1tiet, diemthi, mamon FROM dbo.viewdiemhs</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
             </MainSource>
             <Mappings>
+              <Mapping SourceColumn="mahs" DataSetColumn="mahs" />
               <Mapping SourceColumn="hoten" DataSetColumn="hoten" />
               <Mapping SourceColumn="tenlop" DataSetColumn="tenlop" />
               <Mapping SourceColumn="hocky" DataSetColumn="hocky" />
@@ -26,7 +27,6 @@
               <Mapping SourceColumn="diem1tiet" DataSetColumn="diem1tiet" />
               <Mapping SourceColumn="diemthi" DataSetColumn="diemthi" />
               <Mapping SourceColumn="mamon" DataSetColumn="mamon" />
-              <Mapping SourceColumn="mahs" DataSetColumn="mahs" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -35,13 +35,20 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataSetDiem" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSetDiem" msprop:Generator_UserDSName="DataSetDiem" msprop:EnableTableAdapterManager="true">
+  <xs:element name="DataSetDiem" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetDiem" msprop:Generator_DataSetName="DataSetDiem" msprop:EnableTableAdapterManager="true">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="viewdiemhs" msprop:Generator_UserTableName="viewdiemhs" msprop:Generator_RowDeletedName="viewdiemhsRowDeleted" msprop:Generator_TableClassName="viewdiemhsDataTable" msprop:Generator_RowChangedName="viewdiemhsRowChanged" msprop:Generator_RowClassName="viewdiemhsRow" msprop:Generator_RowChangingName="viewdiemhsRowChanging" msprop:Generator_RowEvArgName="viewdiemhsRowChangeEvent" msprop:Generator_RowEvHandlerName="viewdiemhsRowChangeEventHandler" msprop:Generator_TablePropName="viewdiemhs" msprop:Generator_TableVarName="tableviewdiemhs" msprop:Generator_RowDeletingName="viewdiemhsRowDeleting">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="hoten" msprop:Generator_UserColumnName="hoten" msprop:Generator_ColumnPropNameInRow="hoten" msprop:Generator_ColumnVarNameInTable="columnhoten" msprop:Generator_ColumnPropNameInTable="hotenColumn" minOccurs="0">
+              <xs:element name="mahs" msprop:Generator_UserColumnName="mahs" msprop:Generator_ColumnPropNameInRow="mahs" msprop:Generator_ColumnVarNameInTable="columnmahs" msprop:Generator_ColumnPropNameInTable="mahsColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hoten" msprop:Generator_UserColumnName="hoten" msprop:Generator_ColumnPropNameInRow="hoten" msprop:Generator_ColumnVarNameInTable="columnhoten" msprop:Generator_ColumnPropNameInTable="hotenColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -60,13 +67,6 @@
               <xs:element name="diem1tiet" msprop:Generator_UserColumnName="diem1tiet" msprop:Generator_ColumnPropNameInRow="diem1tiet" msprop:Generator_ColumnVarNameInTable="columndiem1tiet" msprop:Generator_ColumnPropNameInTable="diem1tietColumn" type="xs:double" minOccurs="0" />
               <xs:element name="diemthi" msprop:Generator_UserColumnName="diemthi" msprop:Generator_ColumnPropNameInRow="diemthi" msprop:Generator_ColumnVarNameInTable="columndiemthi" msprop:Generator_ColumnPropNameInTable="diemthiColumn" type="xs:double" minOccurs="0" />
               <xs:element name="mamon" msprop:Generator_UserColumnName="mamon" msprop:Generator_ColumnPropNameInRow="mamon" msprop:Generator_ColumnVarNameInTable="columnmamon" msprop:Generator_ColumnPropNameInTable="mamonColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="mahs" msprop:Generator_UserColumnName="mahs" msprop:Generator_ColumnPropNameInRow="mahs" msprop:Generator_ColumnVarNameInTable="columnmahs" msprop:Generator_ColumnPropNameInTable="mahsColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
