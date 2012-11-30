@@ -109,7 +109,7 @@ namespace QLD
 
         private void fbangdiemhs_Click(object sender, EventArgs e)
         {
-            rpdiem rp = new rpdiem();
+            frpdiem rp = new frpdiem();
             rp.Show();
             
         }
