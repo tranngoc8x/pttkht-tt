@@ -39,6 +39,7 @@
             this.mnhocsinh = new System.Windows.Forms.ToolStripMenuItem();
             this.themhs = new System.Windows.Forms.ToolStripMenuItem();
             this.danhsachhs = new System.Windows.Forms.ToolStripMenuItem();
+            this.phânLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mndaotao = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýNămHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themnh = new System.Windows.Forms.ToolStripMenuItem();
@@ -150,7 +151,8 @@
             // 
             this.mnhocsinh.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.themhs,
-            this.danhsachhs});
+            this.danhsachhs,
+            this.phânLớpToolStripMenuItem});
             this.mnhocsinh.Name = "mnhocsinh";
             this.mnhocsinh.Size = new System.Drawing.Size(98, 20);
             this.mnhocsinh.Text = "Quản lý học sinh";
@@ -168,6 +170,12 @@
             this.danhsachhs.Size = new System.Drawing.Size(166, 22);
             this.danhsachhs.Text = "Danh sách học sinh";
             this.danhsachhs.Click += new System.EventHandler(this.danhsachhs_Click);
+            // 
+            // phânLớpToolStripMenuItem
+            // 
+            this.phânLớpToolStripMenuItem.Name = "phânLớpToolStripMenuItem";
+            this.phânLớpToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.phânLớpToolStripMenuItem.Text = "Phân lớp";
             // 
             // mndaotao
             // 
@@ -432,7 +440,7 @@
             this.panel_infor.Location = new System.Drawing.Point(88, 60);
             this.panel_infor.Name = "panel_infor";
             this.panel_infor.Size = new System.Drawing.Size(527, 335);
-            this.panel_infor.TabIndex = 4;
+            this.panel_infor.TabIndex = 0;
             this.panel_infor.Visible = false;
             // 
             // close_inf
@@ -590,6 +598,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label close_inf;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolStripMenuItem phânLớpToolStripMenuItem;
     }
 }
 

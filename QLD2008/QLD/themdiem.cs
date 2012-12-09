@@ -128,17 +128,17 @@ namespace QLD
 
            if (!String.IsNullOrEmpty(txt15p.Text.ToString()) && (diem15 < 0 || diem15 > 10))
            {
-               MessageBox.Show("Điểm không hợp lệ !", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               MessageBox.Show("Điểm phải là số trong khoảng 0-10. Hãy kiểm tra lại !", "Lỗi nhập điểm", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
            }
            if (!String.IsNullOrEmpty(txt45p.Text.ToString()) && (diem45 < 0 || diem45 > 10))
            {
-               MessageBox.Show("Điểm không hợp lệ !", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               MessageBox.Show("Điểm phải là số trong khoảng 0-10. Hãy kiểm tra lại !", "Lỗi nhập điểm", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
            }
            if (!String.IsNullOrEmpty(txtthi.Text.ToString()) && (diemthi < 0 || diemthi > 10))
            {
-               MessageBox.Show("Điểm không hợp lệ !", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               MessageBox.Show("Điểm phải là số trong khoảng 0-10. Hãy kiểm tra lại !", "Lỗi nhập điểm", MessageBoxButtons.OK, MessageBoxIcon.Error);
                return;
            }
 

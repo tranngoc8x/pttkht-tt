@@ -14,3 +14,4 @@ F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\Q
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.exe
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.pdb
 F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.fbaocaohocs.resources
+F:\HOCVIEN\ky3\T3_Phân tích và thiết kế hệ thống thông tin\QLD2008\QLD\obj\Debug\QLD.phanlop.resources

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbmon = new System.Windows.Forms.ComboBox();
             this.listmonhocBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.commonData = new QLD.CommonData();
@@ -46,6 +46,15 @@
             this.btnsuadiem = new DevComponents.DotNetBar.ButtonX();
             this.btnthemdiem = new DevComponents.DotNetBar.ButtonX();
             this.griddiem = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.mahsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hotenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenlopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hockyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diem15DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diem1tietDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemthiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mamonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.viewlistdiemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
             this.txttb = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtthi = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -64,24 +73,15 @@
             this.list_monhocTableAdapter = new QLD.CommonDataTableAdapters.list_monhocTableAdapter();
             this.selectHSTableAdapter = new QLD.CommonDataTableAdapters.selectHSTableAdapter();
             this.dataSetDiem = new QLD.DataSetDiem();
-            this.viewlistdiemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.view_listdiemTableAdapter = new QLD.CommonDataTableAdapters.view_listdiemTableAdapter();
-            this.mahsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hotenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenlopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hockyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diem15DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diem1tietDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diemthiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mamonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.listmonhocBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commonData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectHSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listlopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listnamhocBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.griddiem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewlistdiemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).BeginInit();
             this.SuspendLayout();
             // 
             // cbmon
@@ -240,19 +240,72 @@
             this.diemthiDataGridViewTextBoxColumn,
             this.mamonDataGridViewTextBoxColumn});
             this.griddiem.DataSource = this.viewlistdiemBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.griddiem.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.griddiem.DefaultCellStyle = dataGridViewCellStyle1;
             this.griddiem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.griddiem.Location = new System.Drawing.Point(11, 204);
             this.griddiem.Name = "griddiem";
             this.griddiem.Size = new System.Drawing.Size(706, 215);
             this.griddiem.TabIndex = 42;
+            // 
+            // mahsDataGridViewTextBoxColumn
+            // 
+            this.mahsDataGridViewTextBoxColumn.DataPropertyName = "mahs";
+            this.mahsDataGridViewTextBoxColumn.HeaderText = "mahs";
+            this.mahsDataGridViewTextBoxColumn.Name = "mahsDataGridViewTextBoxColumn";
+            // 
+            // hotenDataGridViewTextBoxColumn
+            // 
+            this.hotenDataGridViewTextBoxColumn.DataPropertyName = "hoten";
+            this.hotenDataGridViewTextBoxColumn.HeaderText = "hoten";
+            this.hotenDataGridViewTextBoxColumn.Name = "hotenDataGridViewTextBoxColumn";
+            // 
+            // tenlopDataGridViewTextBoxColumn
+            // 
+            this.tenlopDataGridViewTextBoxColumn.DataPropertyName = "tenlop";
+            this.tenlopDataGridViewTextBoxColumn.HeaderText = "tenlop";
+            this.tenlopDataGridViewTextBoxColumn.Name = "tenlopDataGridViewTextBoxColumn";
+            // 
+            // hockyDataGridViewTextBoxColumn
+            // 
+            this.hockyDataGridViewTextBoxColumn.DataPropertyName = "hocky";
+            this.hockyDataGridViewTextBoxColumn.HeaderText = "hocky";
+            this.hockyDataGridViewTextBoxColumn.Name = "hockyDataGridViewTextBoxColumn";
+            // 
+            // diem15DataGridViewTextBoxColumn
+            // 
+            this.diem15DataGridViewTextBoxColumn.DataPropertyName = "diem15";
+            this.diem15DataGridViewTextBoxColumn.HeaderText = "diem15";
+            this.diem15DataGridViewTextBoxColumn.Name = "diem15DataGridViewTextBoxColumn";
+            // 
+            // diem1tietDataGridViewTextBoxColumn
+            // 
+            this.diem1tietDataGridViewTextBoxColumn.DataPropertyName = "diem1tiet";
+            this.diem1tietDataGridViewTextBoxColumn.HeaderText = "diem1tiet";
+            this.diem1tietDataGridViewTextBoxColumn.Name = "diem1tietDataGridViewTextBoxColumn";
+            // 
+            // diemthiDataGridViewTextBoxColumn
+            // 
+            this.diemthiDataGridViewTextBoxColumn.DataPropertyName = "diemthi";
+            this.diemthiDataGridViewTextBoxColumn.HeaderText = "diemthi";
+            this.diemthiDataGridViewTextBoxColumn.Name = "diemthiDataGridViewTextBoxColumn";
+            // 
+            // mamonDataGridViewTextBoxColumn
+            // 
+            this.mamonDataGridViewTextBoxColumn.DataPropertyName = "mamon";
+            this.mamonDataGridViewTextBoxColumn.HeaderText = "mamon";
+            this.mamonDataGridViewTextBoxColumn.Name = "mamonDataGridViewTextBoxColumn";
+            // 
+            // viewlistdiemBindingSource
+            // 
+            this.viewlistdiemBindingSource.DataMember = "view_listdiem";
+            this.viewlistdiemBindingSource.DataSource = this.commonData;
             // 
             // labelX9
             // 
@@ -444,62 +497,9 @@
             this.dataSetDiem.DataSetName = "DataSetDiem";
             this.dataSetDiem.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // viewlistdiemBindingSource
-            // 
-            this.viewlistdiemBindingSource.DataMember = "view_listdiem";
-            this.viewlistdiemBindingSource.DataSource = this.commonData;
-            // 
             // view_listdiemTableAdapter
             // 
             this.view_listdiemTableAdapter.ClearBeforeFill = true;
-            // 
-            // mahsDataGridViewTextBoxColumn
-            // 
-            this.mahsDataGridViewTextBoxColumn.DataPropertyName = "mahs";
-            this.mahsDataGridViewTextBoxColumn.HeaderText = "mahs";
-            this.mahsDataGridViewTextBoxColumn.Name = "mahsDataGridViewTextBoxColumn";
-            // 
-            // hotenDataGridViewTextBoxColumn
-            // 
-            this.hotenDataGridViewTextBoxColumn.DataPropertyName = "hoten";
-            this.hotenDataGridViewTextBoxColumn.HeaderText = "hoten";
-            this.hotenDataGridViewTextBoxColumn.Name = "hotenDataGridViewTextBoxColumn";
-            // 
-            // tenlopDataGridViewTextBoxColumn
-            // 
-            this.tenlopDataGridViewTextBoxColumn.DataPropertyName = "tenlop";
-            this.tenlopDataGridViewTextBoxColumn.HeaderText = "tenlop";
-            this.tenlopDataGridViewTextBoxColumn.Name = "tenlopDataGridViewTextBoxColumn";
-            // 
-            // hockyDataGridViewTextBoxColumn
-            // 
-            this.hockyDataGridViewTextBoxColumn.DataPropertyName = "hocky";
-            this.hockyDataGridViewTextBoxColumn.HeaderText = "hocky";
-            this.hockyDataGridViewTextBoxColumn.Name = "hockyDataGridViewTextBoxColumn";
-            // 
-            // diem15DataGridViewTextBoxColumn
-            // 
-            this.diem15DataGridViewTextBoxColumn.DataPropertyName = "diem15";
-            this.diem15DataGridViewTextBoxColumn.HeaderText = "diem15";
-            this.diem15DataGridViewTextBoxColumn.Name = "diem15DataGridViewTextBoxColumn";
-            // 
-            // diem1tietDataGridViewTextBoxColumn
-            // 
-            this.diem1tietDataGridViewTextBoxColumn.DataPropertyName = "diem1tiet";
-            this.diem1tietDataGridViewTextBoxColumn.HeaderText = "diem1tiet";
-            this.diem1tietDataGridViewTextBoxColumn.Name = "diem1tietDataGridViewTextBoxColumn";
-            // 
-            // diemthiDataGridViewTextBoxColumn
-            // 
-            this.diemthiDataGridViewTextBoxColumn.DataPropertyName = "diemthi";
-            this.diemthiDataGridViewTextBoxColumn.HeaderText = "diemthi";
-            this.diemthiDataGridViewTextBoxColumn.Name = "diemthiDataGridViewTextBoxColumn";
-            // 
-            // mamonDataGridViewTextBoxColumn
-            // 
-            this.mamonDataGridViewTextBoxColumn.DataPropertyName = "mamon";
-            this.mamonDataGridViewTextBoxColumn.HeaderText = "mamon";
-            this.mamonDataGridViewTextBoxColumn.Name = "mamonDataGridViewTextBoxColumn";
             // 
             // themdiem
             // 
@@ -540,8 +540,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.listlopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listnamhocBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.griddiem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewlistdiemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetDiem)).EndInit();
             this.ResumeLayout(false);
 
         }
